@@ -18,6 +18,10 @@ class User_model extends CI_model{
 
 		return $valid;
 	}
+
+	public function insert($data){
+		$this->db->insert('user', $data);
+	}
 	
 }
 
