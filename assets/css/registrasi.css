@@ -55,6 +55,12 @@ background-color: #e6e6e6;
 
 #box{
 	
-	height: 800px;
+	height: 400px;
 	
+	}
+#box2{
+	width: 30%;
+	margin-left: 30px;
+	border: 1px solid #ddd;
+	height: 100%;
 }
