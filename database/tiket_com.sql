@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 11, 2019 at 06:30 PM
+-- Generation Time: Apr 11, 2019 at 11:37 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 5.6.40
 
@@ -91,7 +91,7 @@ INSERT INTO `pesawat` (`id`, `maskapai`, `ketersediaan`, `kelas`) VALUES
 --
 
 CREATE TABLE `user` (
-  `nama_lengkap` varchar(20) NOT NULL,
+  `username` varchar(20) NOT NULL,
   `email` varchar(20) NOT NULL,
   `password` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -100,7 +100,7 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`nama_lengkap`, `email`, `password`) VALUES
+INSERT INTO `user` (`username`, `email`, `password`) VALUES
 ('elsha', 'elsha@gmail.com', 'password');
 
 --

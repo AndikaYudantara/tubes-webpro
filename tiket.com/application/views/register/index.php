@@ -1,56 +1,33 @@
-<hr id="hr">
-<div align="center">
-	<p style="color: black;font-size: 125%;font-weight: bold;padding-top: 20px;padding-bottom: 5px;"> Log In ke tiket.com </p>
-</div>	
-
-<div align="center">
-		<table cellpadding="35">
-			<tr>
-				<td><button id="b1"><img style="width: 25px;height: 25px;" src="assets/img/fb.png"> Log In dengan Facebook</button></td>
-			
-				<td><button id="b2"><img id="b21" style="height: 30px;width: 30px;padding-right: : 10px;margin-right: 5px;" src="assets/img/google.png"> Log In dengan Google</button></td>
-			</tr>
-
-		</table>
-
-</div >
-
-<div  align="center">
-	<img style="width: 150px;" src="assets/img/4.png">
+<div class="container-fluid text-center" style="border: 0.5px solid #e6e6e6;">
+	<h2 style="font-size: 20px; padding: 37px">Daftar sekarang dan dapatkan manfaatnya!</h2>
+	<a class="btn btn-primary" href="#"	style="background: #3B5998; margin: 0px 10px 15px;"><img src="<?= base_url(); ?>/assets/img/logo_fb.png" height="16">Log In dengan Facebook</a>
+	<a class="btn btn-outline-secondary" href="#" style="margin: 0px 10px 15px;"><img src="<?= base_url(); ?>/assets/img/logo_g.png" height="16">Log In dengan Google</a>
+	<div class="row justify-content-center" style="color: #888888">
+		- atau -
+	</div>
+	<div class="row justify-content-center" style="font-size: 14px;">
+		<?= form_open(base_url('Register/insert')); ?>
+		<form class="rounded" method="post" style="width: 498px; border: 2px solid #e6e6e6; padding: 40px 40px; margin: 15px;">
+			<div class="form-group text-left">
+				<input type="text" class="form-control" name="username" placeholder="Nama Lengkap">
+			</div>
+			<div class="form-group text-left">
+				<input type="email" class="form-control" name="email" placeholder="Alamat Email">
+			</div>
+			<div class="form-group text-left">
+				<input type="password" class="form-control" name="password" placeholder="Kata Sandi">
+			</div>
+			<div class="form-group text-left">
+				<input type="password" class="form-control" name="password_conf" placeholder="Konfirmasi Kata Sandi">
+			</div>
+			<div class="row form-group text-left" style="padding-bottom: 25px;">
+				<div class="col-md-4 form-control" style="border: none; font-size: 13px; color: #888888;">Kekuatan Kata Sandi</div>
+				<div class="col-md-8 form-control" style="border: none; font-size: 13px; color: #888888; max-width: 300px;">Kata sandi harus menggunakan paling tidak 8 karakter dan menggunakan paling tidak satu simbol atau angka.</div>
+			</div>
+			<div class="form-group"><label class="checkbox-inline"><input type="checkbox">Saya ingin menerima penawaran menarik dan notifikasi</label></div>
+			<div class="form-group mx-auto" style="max-width: 415px; color: #888888">Dengan mengklik button “Daftar” di bawah ini, saya setuju dengan<a class="disabled" style="color: #FF7200; font-size: 13px"> Kebijakan Privasi</a> serta <a class="disabled" style="color: #FF7200; font-size: 13px">Syarat dan Ketentuan</a> tiket.com</div>
+			<button type="submit" name="regis" class="btn btn-primary" style="background-color: #FF7200; width: 415px; margin: auto auto 15px;">Daftar</button>
+			<div class="form-group text-center">Sudah punya akun? <a href="<?= base_url('Login'); ?>" style="color: #FF7200">Log In</a></div>
+		</form>
+	</div>
 </div>
-
-
-<div align="center" id="box">
-    <div align="center" style="border-radius: 5px;" id="box2">
-    	<?= form_open('Register/insert'); ?>
-    	<form method="post">
-        <input id="nama" style="margin-top: 60px;" placeholder="Nama Lengkap" type="text" name="nama" id="nama">
-        <input type="email" placeholder="Alamat Email" name="email" id="email">
-        <input type="password" id="pass" placeholder="Kata Sandi" name="pass" id="pass">
-        <input type="password" placeholder="Konfirmasi Kata Sandi" id="re-pass" name="re-pass" id="re-pass">
-
-      <label>
-          <input type="checkbox" id="cek" name="agree-term" id="agree-term">
-            <span style="color: black;font-weight: 500;">Saya ingin menerima penawaran menarik dan notifikasi</span>    
-       </label>
-
-       <div style="margin-left: 50px; margin-right: 50px; margin-top: 30px; font-size: 75%" align="center">
-         Dengan mengklik button “Daftar” di bawah ini, saya setuju dengan <span id="span">Kebijakan Privasi</span> serta <span id="span">Syarat dan Ketentuan</span> tiket.com
-       </div>
-
-         <button id="btn" >
-               Daftar
-         </button>
-
-          <div align="center">
-    <div align="center">Sudah Punya Akun? <span style="color: #ff9900;"><a href="<?= base_url(); ?>">Log In</a></span>
-    </div>
-  </div>
-  </form>
-    </div>
-
-
-
-</div>
-
-<hr id="hr1">

@@ -1,44 +1,24 @@
-	<hr id="hr">
-	<div align="center">
-		<p style="color: black;font-size: 125%;font-weight: bold;padding-top: 20px;padding-bottom: 5px;"> Log In ke tiket.com </p>
-	</div>	
-
-	<div align="center">
-		<table cellpadding="35">
-			<tr>
-				<td><button id="b1"><img style="width: 25px;height: 25px;" src="<?= base_url('assets/img/fb.png'); ?>"> Log In dengan Facebook</button></td>
-				
-				<td><button id="b2"><img id="b21" style="height: 30px;width: 30px;padding-right: : 10px;margin-right: 5px;" src="<?= base_url('assets/img/google.png') ?>"> Log In dengan Google</button></td>
-			</tr>
-
-		</table>
-
-	</div >
-
-	<div  align="center">
-		<img style="width: 150px;" src="<?= base_url('assets/img/4.png') ?>">
+<div class="container-fluid text-center" style="border: 0.5px solid #e6e6e6;">
+	<h2 style="font-size: 20px; padding: 37px">Log In ke tiket.com</h2>
+	<a class="btn btn-primary" href="#"	style="background: #3B5998; margin: 0px 10px 15px;"><img src="<?= base_url(); ?>/assets/img/logo_fb.png" height="16">Log In dengan Facebook</a>
+	<a class="btn btn-outline-secondary" href="#" style="margin: 0px 10px 15px;"><img src="<?= base_url(); ?>/assets/img/logo_g.png" height="16">Log In dengan Google</a>
+	<div class="row justify-content-center" style="color: #888888">
+		- atau -
 	</div>
-
-	<div align="center" id="box">
-		<div align="center" style="border-radius: 5px;border: solid 1px #ddd ;margin-bottom: 100px; ;width: 40%;height: 100%;margin-left: 40px;box-shadow: 0 6px 8px 0 rgba(0,0,0,0.15); ">
-			<?= form_open('Login/validate'); ?>
-			<form method="post">
-			<input id="email" type="text" name="email" placeholder="Alamat Email" >
-			<br>
-			<input id="pass"  placeholder="Kata Sandi" type="password" name="pass">
-
-
-			<div align="center" style="color: #ff9900 ; margin-top: 10px;">
-				Lupa Kata Sandi?
-
+	<div class="row justify-content-center" style="font-size: 14px;">
+		<?= form_open(base_url('Login/validate')); ?>
+		<form class="rounded" method="post" style="width: 498px; border: 2px solid #e6e6e6; padding: 40px 40px; margin: 15px;">
+			<div class="form-group text-left">
+				<label>Alamat Email</label>
+				<input type="email" class="form-control" name="email">
 			</div>
-                <button type="submit" id="btn" class="btn">Log In</button>
-			<div align="center">
-				<div align="center">Belum Punya Akun? <span style="color: #ff9900;"><a href="<?= base_url('Register'); ?>">Daftar</a></span>
-				</div>
+			<div class="form-group text-left">
+				<label>Kata Sandi</label>
+				<input type="password" class="form-control" name="password">
 			</div>
-			</form>
-		</div>
+			<div class="form-group"><a class="disabled" style="color: #FF7200; font-size: 13px">Lupa Kata Sandi?</a></div>
+			<button type="submit" name="login" class="btn btn-primary" style="background-color: #FF7200; width: 415px; margin: auto auto 15px;">Log In</button>
+			<div class="form-group text-center">Belum punya akun? <a href="<?= base_url('Register'); ?>" style="color: #FF7200">Daftar</a></div>
+		</form>
 	</div>
-
-	<hr id="hr1">
+</div>
