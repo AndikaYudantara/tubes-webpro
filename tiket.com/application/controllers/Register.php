@@ -11,6 +11,7 @@ class Register extends CI_Controller{
 		#$this->session->sess_destroy();
 		$data['title'] = 'tiket.com | Hotel, Pesawat, Kereta Api, Sewa Mobil, Konser';
 		$this->load->view('templates/header', $data);
+		$this->load->view('templates/navbar');
 		$this->load->view('register/index');
 		$this->load->view('templates/footer');
 	}

@@ -11,6 +11,7 @@ class Login extends CI_Controller{
 		#$this->session->sess_destroy();
 		$data['title'] = 'tiket.com | Hotel, Pesawat, Kereta Api, Sewa Mobil, Konser';
 		$this->load->view('templates/header', $data);
+		$this->load->view('templates/navbar');
 		$this->load->view('login/index');
 		$this->load->view('templates/footer');
 	}
@@ -27,6 +28,11 @@ class Login extends CI_Controller{
 		}else{
 			redirect(base_url());
 		}
+	}
+
+	public function logout(){
+		$this->session->sess_destroy();
+		redirect(base_url());
 	}
 }
 ?>
