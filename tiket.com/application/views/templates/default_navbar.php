@@ -43,7 +43,7 @@
           <a class="nav-link disabled" role="button" href="#" style="color: black;">Hotel</a>
         </li>
         <li class="navbar-nav">
-          <a class="nav-link" role="button" href="#" style="color: black;">Kereta Api</a>
+          <a class="nav-link" role="button" href="<?= base_url('Kereta_api') ?>" style="color: black;">Kereta Api</a>
         </li>
         <li class="navbar-nav">
           <a class="nav-link disabled" role="button" href="#" style="color: black;">Sewa Mobil</a>
