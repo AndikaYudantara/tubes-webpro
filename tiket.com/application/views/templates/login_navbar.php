@@ -53,7 +53,7 @@
           <a class="nav-link disabled" role="button" href="#" style="color: #222222;">Cek Pesanan</a>
         </li>
         <li class="navbar-nav">
-          <a class="nav-link" role="button" href="<?= base_url(); ?>" style="color: #FF7200;">Log In</a>
+          <a class="nav-link" role="button" href="<?= base_url('Login'); ?>" style="color: #FF7200;">Log In</a>
         </li>
       </ul>
       </div>

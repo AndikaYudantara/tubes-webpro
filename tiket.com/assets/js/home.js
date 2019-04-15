@@ -1,12 +1,3 @@
-function hotel(){
-  document.getElementsById("hotel").display = "block";
-  document.getElementsById("pesawat").display = "none";
-}
-function pesawat(){
-  document.getElementsById("pesawat").display = "block";
-  document.getElementsById("hotel").display = "none";
-}
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
