@@ -3,6 +3,20 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css"  href="<?= base_url(); ?>/assets/css/footer.css">
 
+<img style="width: 100%" src="<?= base_url();?>/assets/img/tes.png">
+  
+
+
+
+  <div style="width: 100%; height: 75px;background-color: #efefef;">
+      <div align="center" style="padding-top: 25px;">
+        <span style="font-weight: bold;margin-right:50px;"> Berlangganan newsletter spesial promo dan penawaran terbaik</span>
+        <input type="text" name="langganan_email" placeholder="Masukkan email Anda" style="border-radius: 16px; height: 33px;width: 18%;border: solid 2px #ddd; font-size: 75%;padding-left: 20px;margin-right: 10px;">
+        <button style="border-radius: 16px;padding: 5px;font-size: 70%;border: none;background-color:#fedd00;color: #0064d2;height: 33px; ">BERLANGGANAN</button>
+        
+      </div>
+
+  </div>
 	
 	<footer class="page-footer font-small stylish-color-dark pt-4">
 
@@ -20,7 +34,7 @@
         <div class="col mx-auto">
 
           <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Perusahaan</h5>
+          <h5 class="font-weight-bold text-capitalize mt-3 mb-4">Perusahaan</h5>
 
           <ul class="list-unstyled">
             <li>
@@ -58,7 +72,7 @@
         <div class="col mx-auto">
 
           <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Bantuan</h5>
+          <h5 class="font-weight-bold text-capitalize mt-3 mb-4">Bantuan</h5>
 
           <ul class="list-unstyled">
             <li>
@@ -79,11 +93,15 @@
 
         <!-- Grid column -->
         <div class="col mx-auto">
-
+          <div class="row">
           <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Penghargaan</h5>
-
-         <img src="<?= base_url(); ?>/assets/img/logo_penghargaan.png">
+          <h5 style="margin-right: 100px;" class="font-weight-bold text-capitalize mt-3 mb-4">Penghargaan</h5><br>
+                <img style="margin-bottom: 10px; " src="<?= base_url(); ?>/assets/img/logo_penghargaan1.png">
+          </div>
+         <div class="row">
+             <h5 class="font-weight-bold text-capitalize mt-3 mb-4">Keamanan Transaksi Anda</h5>
+              <img src="<?= base_url(); ?>/assets/img/logo_kartu.png">
+          </div>
         </div>
         <!-- Grid column -->
          <hr class="clearfix w-100 d-md-none">
@@ -116,62 +134,62 @@
     </div>
     <!-- Footer Links -->
 
-    <hr>
+    <hr><hr>
 
-</footer>
-<footer class="page-footer font-small cyan darken-3">
 
-    <!-- Footer Elements -->
-    <div class="container">
+ <ul class="list-unstyled list-inline text-center">
+      
+       <li class="list-inline-item">
+        <a href="#">
+          <img src="<?= base_url(); ?>/assets/img/logo_foot_fb.png">
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#">
+          <img src="<?= base_url(); ?>/assets/img/logo_foot_twitter.png">
+        </a>
+      </li>
+     <li class="list-inline-item">
+        <a href="#">
+          <img src="<?= base_url(); ?>/assets/img/logo_foot_gplus.png">
+        </a>
+      </li>
+     <li class="list-inline-item">
+        <a href="#">
+          <img src="<?= base_url(); ?>/assets/img/logo_foot_in.png">
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#">
+          <img src="<?= base_url(); ?>/assets/img/logo_foot_yt.png">
+        </a>
+      </li>
+    </ul>
 
-      <!-- Grid row-->
-      <div class="row">
-
-        <!-- Grid column -->
-        <div class="col-md-12 py-5">
-          <div class="mb-5 flex-center">
-
-            <!-- Facebook -->
-            <a class="fb-ic">
-              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a>
-            <!-- Twitter -->
-            <a class="tw-ic">
-              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a>
-            <!-- Google +-->
-            <a class="gplus-ic">
-              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a>
-            <!--Linkedin -->
-            <a class="li-ic">
-              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a>
-            <!--Instagram-->
-            <a class="ins-ic">
-              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a>
-            <!--Pinterest-->
-            <a class="pin-ic">
-              <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
-            </a>
+    <div style="margin:0;float: none;">
+      <div class="container">
+        <div class="row">
+        <div class="col-5"></div>
+         <div class="col" >
+          <div class="row">
+            <span style="font-weight: bold;">PT.Global Tiket Network</span>
+          </div>
+          <div class="row">
+            <a id="g1" href="#">
+             <img  src="<?= base_url(); ?>/assets/img/logo_foot_bli.png">
+             </a>
+          </div>
+          <div class="row" >
+            <span style="font-size: 60%">© 2011-2019 PT. Global Tiket Network. All Rights Reserved</span>
           </div>
         </div>
-        <!-- Grid column -->
-
+        <div class="col-4"> </div>
+       
+        </div>
       </div>
-      <!-- Grid row-->
-
-    </div>
-    <!-- Footer Elements -->
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-
+    </div>      
   </footer>
-  <!-- Footer -->
+
+  <br><br><br>
 </body>
 </html>

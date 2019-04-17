@@ -19,4 +19,13 @@ ul li{
 	display: inline-block;
 }
 
+ul li a img:hover{
+cursor: pointer;
+}
+#g1{
+	margin-top: 5px;
+}
+#g1:hover{
+	cursor: pointer;
+}
 

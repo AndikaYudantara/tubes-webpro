@@ -1,3 +1,5 @@
+
+
 <div class="container-fluid text-center" style="border: 0.5px solid #e6e6e6;">
 	<h2 style="font-size: 20px; padding: 37px">Log In ke tiket.com</h2>
 	<a class="btn btn-primary" href="#"	style="background: #3B5998; margin: 0px 10px 15px;"><img src="<?= base_url(); ?>/assets/img/logo_fb.png" height="16">Log In dengan Facebook</a>
@@ -15,7 +17,7 @@
 			<div class="form-group text-left" >
 				<input type="password"  placeholder="Kata Sandi" class="form-control border-right-0 border-top-0 border-left-0" name="password">
 			</div>
-			<div class="form-group"><a class="disabled" style="color: #FF7200; font-size: 13px">Lupa Kata Sandi?</a></div>
+			<div class="form-group"><a class="disabled" style="color: #FF7200; font-size: 13px"	>Lupa Kata Sandi?</a></div>
 			<button type="submit" name="login" class="btn btn-primary" style="background-color: #FF7200; width: 415px; margin: auto auto 15px;">Log In</button>
 			<div class="form-group text-center">Belum punya akun? <a href="<?= base_url('Register'); ?>" style="color: #FF7200">Daftar</a></div>
 			</div>	
