@@ -7,7 +7,7 @@
 
 
 
-      <div align="center" style="padding-top: 25px;">
+      <div align="Center" style="width: 100%; height: 75px;background-color: #efefef;padding-top: 25px;">
         <span style="font-weight: bold;margin-right:50px;"> Berlangganan newsletter spesial promo dan penawaran terbaik</span>
         <input type="text" name="langganan_email" placeholder="Masukkan email Anda" style="border-radius: 16px; height: 33px;width: 18%;border: solid 2px #ddd; font-size: 75%;padding-left: 20px;margin-right: 10px;">
         <button style="border-radius: 16px;padding: 5px;font-size: 70%;border: none;background-color:#fedd00;color: #0064d2;height: 33px; ">BERLANGGANAN</button>
