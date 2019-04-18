@@ -1,4 +1,4 @@
-  <div class="container-fluid" style="padding: 0px 15px;">
+<div class="container-fluid" style="padding: 0px 15px;">
     <div class="navbar navbar-expand-md justify-content-between" style="font-size: 13px; padding:0px 15px; padding-left: 100px;">
       <div class="container" style="margin: 0px 0px 0px; padding: 0px 15px;">
       <ul class="navbar-nav">

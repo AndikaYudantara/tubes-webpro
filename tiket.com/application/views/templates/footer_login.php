@@ -165,7 +165,7 @@
       </li>
     </ul>
 
-    <div style="margin:0;float: none;">
+    <div  style="margin:0;float: none;text-align: center;">
       <div class="container">
         <div class="row">
         <div class="col-5"></div>

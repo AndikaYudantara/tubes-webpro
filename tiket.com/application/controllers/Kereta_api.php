@@ -17,7 +17,7 @@ class Kereta_api extends CI_Controller{
 			$this->load->view('templates/default_navbar');			
 		}
 		$this->load->view('kereta_api/index');
-		$this->load->view('templates/footer');
+		$this->load->view('templates/footer_login');
 	}
 
 	public function cari(){
