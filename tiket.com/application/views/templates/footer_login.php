@@ -134,8 +134,7 @@
     </div>
     <!-- Footer Links -->
 
-    <hr><hr>
-
+    <hr>
 
  <ul class="list-unstyled list-inline text-center">
       
