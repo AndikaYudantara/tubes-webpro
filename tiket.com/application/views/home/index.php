@@ -74,14 +74,15 @@
 				<nav class="navbar navbar-expand-sm">
 					<ul class="navbar-nav">
 						<a class="floating-window-header-nav-item"><img class="nav-link" src="<?= base_url(); ?>/assets/img/logo_pesawat.jpg"></a>
-						<a class="floating-window-header-nav-item"><img class="nav-link" src="<?= base_url(); ?>/assets/img/logo_hotel.jpg"></li>
-						<a href="<?= base_url('Kereta_api')?>" class="floating-window-header-nav-item"><img class="nav-link" src="<?= base_url(); ?>/assets/img/logo_kereta.jpg"></li>
-						<a class="floating-window-header-nav-item"><img class="nav-link" src="<?= base_url(); ?>/assets/img/logo_mobil.jpg"></li>
-						<a class="floating-window-header-nav-item"><img class="nav-link" src="<?= base_url(); ?>/assets/img/logo_entertaiment.jpg"></li>
+						<a class="floating-window-header-nav-item"><img class="nav-link" src="<?= base_url(); ?>/assets/img/logo_hotel.jpg"></a>
+						<a href="<?= base_url('Kereta_api')?>" class="floating-window-header-nav-item"><img class="nav-link" src="<?= base_url(); ?>/assets/img/logo_kereta.jpg"></a>
+						<a class="floating-window-header-nav-item"><img class="nav-link" src="<?= base_url(); ?>/assets/img/logo_mobil.jpg"></a>
+						<a class="floating-window-header-nav-item"><img class="nav-link" src="<?= base_url(); ?>/assets/img/logo_entertaiment.jpg"></a>
 					</ul>
 				</nav>
 			</div>
 		</div>
+
 		<br>
 		<div class="floating-window-main">
 			<div id="hotel" class="floating-window-main-hotel" onclick="hotel();">
@@ -92,6 +93,7 @@
 			</div>
 		</div>
 	</div>
+
 </body>
 </html> 
 

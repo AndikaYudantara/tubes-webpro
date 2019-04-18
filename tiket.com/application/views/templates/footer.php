@@ -3,12 +3,10 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css"  href="<?= base_url(); ?>/assets/css/footer.css">
 
-<img style="width: 100%" src="<?= base_url();?>/assets/img/tes.png">
   
 
 
 
-  <div style="width: 100%; height: 75px;background-color: #efefef;">
       <div align="center" style="padding-top: 25px;">
         <span style="font-weight: bold;margin-right:50px;"> Berlangganan newsletter spesial promo dan penawaran terbaik</span>
         <input type="text" name="langganan_email" placeholder="Masukkan email Anda" style="border-radius: 16px; height: 33px;width: 18%;border: solid 2px #ddd; font-size: 75%;padding-left: 20px;margin-right: 10px;">
@@ -30,18 +28,67 @@
 
         <hr class="clearfix w-100 d-md-none">
 
+      <div style="margin-right: 10px;" class="col mx-auto">
+
+          <img style="margin-bottom: 20px;margin-top: 10px;" src="<?= base_url(); ?>/assets/img/logo.svg">
+       
+        <ul style="font-size: 70%" class="list-unstyled">
+          <li>
+            <div class="row">
+              <div class="col-4">
+                <img src="<?= base_url(); ?>/assets/img/logo_foot_1.png">
+              </div>
+
+             <div class="col-4">
+               <div class="row">Whatsapp</div>
+               <div class="row">08551500878</div>  
+             </div>
+          </div>
+          </li>
+
+           <li>
+            <div class="row">
+              <div class="col-4">
+                <img src="<?= base_url(); ?>/assets/img/logo_foot_2.png">
+              </div>
+
+             <div class="col-4">
+               <div class="row">Email</div>
+               <div class="row">cs@tiket.com</div>  
+             </div>
+          </div>
+          </li>
+
+           <li>
+            <div class="row">
+              <div class="col-4">
+                <img src="<?= base_url(); ?>/assets/img/logo_foot_3.png">
+              </div>
+
+             <div class="col-4">
+               <div class="row">Call Center</div>
+               <div class="row">08041500878(Indonesia only)</div>
+               <div class="row">
+                 +622150881050
+               </div>  
+             </div>
+          </div>
+          </li>
+
+        </ul>
+      </div>
         <!-- Grid column -->
         <div class="col mx-auto">
 
           <!-- Links -->
-          <h5 class="font-weight-bold text-capitalize mt-3 mb-4">Perusahaan</h5>
+          <h6 class="font-weight-bold text-capitalize mt-3 mb-4">Perusahaan</h6>
 
           <ul class="list-unstyled">
             <li>
               <a href="#!"> Karir</a>
             </li>
             <li>
-              <a href="#!">Corporate 2</a>
+              <a href="#!">Corporate </a>
             </li>
             <li>
               <a href="#!">Partner</a>
@@ -68,11 +115,37 @@
 
         <hr class="clearfix w-100 d-md-none">
 
+
+        <div class="col mx-auto">
+
+          <!-- Links -->
+          <h6 class="font-weight-bold text-capitalize mt-3 mb-4">Produk</h6>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Pesawat</a>
+            </li>
+            <li>
+              <a href="#!">Hotel</a>
+            </li>
+            <li>
+              <a href="#!">Kereta Api</a>
+            </li>
+             <li>
+              <a href="#!">Sewa Mobil</a>
+            </li>
+             <li>
+              <a href="#!">Hiburan</a>
+            </li>
+          </ul>
+
+        </div>
+
         <!-- Grid column -->
         <div class="col mx-auto">
 
           <!-- Links -->
-          <h5 class="font-weight-bold text-capitalize mt-3 mb-4">Bantuan</h5>
+          <h6 class="font-weight-bold text-capitalize mt-3 mb-4">Dukungan</h6>
 
           <ul class="list-unstyled">
             <li>
@@ -87,109 +160,97 @@
           </ul>
 
         </div>
-        <!-- Grid column -->
 
-        <hr class="clearfix w-100 d-md-none">
+       <div class="col mx-auto">
 
-        <!-- Grid column -->
-        <div class="col mx-auto">
-          <div class="row">
-          <!-- Links -->
-          <h5 style="margin-right: 100px;" class="font-weight-bold text-capitalize mt-3 mb-4">Penghargaan</h5><br>
-                <img style="margin-bottom: 10px; " src="<?= base_url(); ?>/assets/img/logo_penghargaan1.png">
-          </div>
-         <div class="row">
-             <h5 class="font-weight-bold text-capitalize mt-3 mb-4">Keamanan Transaksi Anda</h5>
-              <img src="<?= base_url(); ?>/assets/img/logo_kartu.png">
-          </div>
-        </div>
-        <!-- Grid column -->
-         <hr class="clearfix w-100 d-md-none">
+           <h6 class="font-weight-bold text-capitalize mt-3 mb-4">Download tiket.com app</h6>
 
-        <!-- Grid column -->
-        <div class="col mx-auto">
+           <ul class="list-unstyled" >
+              <li>
+                <a href="#">
+                <img id="img" src="<?= base_url(); ?>/assets/img/logo_app_apple.png"></a>
+              </li>
+              <li>
+                  <a href="#">
+                  <img id="img" src="<?= base_url(); ?>/assets/img/logo_app_google.png"></a>
+              </li>
+           </ul>
 
-          <!-- Links -->
+
+       </div>
+
         
-          <ul>
-          	 <li>
-         		<img style="margin-bottom: 20px;" src="<?= base_url(); ?>/assets/img/logo_CC.png">
-     	 	 </li>
-     	 	 <li style="margin-bottom: 10px;font-weight: bold;">
-     	 	 	<p>Ada Pertanyaan</p>
-     	 	 </li>
-     	 	 <li>
-     	 	 	<div class="input-group mb-3">
- 						 <input style="font-size: 87%" type="text" class="form-control" placeholder="Masukan Pertanyaan">
- 				 		<div class="input-group-append">
-   								 <span style="background-color: #ff6600;color: white;" class="input-group-text" id="basic-addon2">Kirim</span>
- 						 </div>
-				</div>
-     	 	 </li>
-     	 </ul>
-        </div>
       </div>
-      <!-- Grid row -->
 
     </div>
-    <!-- Footer Links -->
 
-    <hr><hr>
-
-
- <ul class="list-unstyled list-inline text-center">
-      
-       <li class="list-inline-item">
-        <a href="#">
-          <img src="<?= base_url(); ?>/assets/img/logo_foot_fb.png">
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a href="#">
-          <img src="<?= base_url(); ?>/assets/img/logo_foot_twitter.png">
-        </a>
-      </li>
-     <li class="list-inline-item">
-        <a href="#">
-          <img src="<?= base_url(); ?>/assets/img/logo_foot_gplus.png">
-        </a>
-      </li>
-     <li class="list-inline-item">
-        <a href="#">
-          <img src="<?= base_url(); ?>/assets/img/logo_foot_in.png">
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a href="#">
-          <img src="<?= base_url(); ?>/assets/img/logo_foot_yt.png">
-        </a>
-      </li>
-    </ul>
-
-    <div style="margin:0;float: none;">
-      <div class="container">
+    <div class="container text-center text-md-left">
         <div class="row">
-        <div class="col-5"></div>
-         <div class="col" >
-          <div class="row">
-            <span style="font-weight: bold;">PT.Global Tiket Network</span>
+          <div class="col mx-auto">
+            
+            <img src="<?= base_url(); ?>/assets/img/logo_foot_wonderful.png">
           </div>
-          <div class="row">
-            <a id="g1" href="#">
-             <img  src="<?= base_url(); ?>/assets/img/logo_foot_bli.png">
-             </a>
+          <div class="col mx-auto">
+              <div class="row">
+               <h6 class="font-weight-bold text-capitalize mt-3 mb-4">Keamanan Transaksi Anda</h6></div>
+
+               <div class="row">
+                <img src="<?= base_url(); ?>/assets/img/logo_kartu.png" >
+
+               </div>
+
           </div>
-          <div class="row" >
-            <span style="font-size: 60%">© 2011-2019 PT. Global Tiket Network. All Rights Reserved</span>
+
+          
+
+          <div class="col mx-auto">
+              <div class="row">
+               <h6 style="margin-left: 20px;" class="font-weight-bold text-capitalize mt-3 mb-4">Penghargaan</h6></div>
+
+               <div class="row">
+                <img src="<?= base_url(); ?>/assets/img/logo_penghargaan1.png" >
+
+               </div>
+
+          </div>
+
+          <div style="padding-left: 20px;" class="col mx-auto">
+              <div class="row">
+               <h6 class="font-weight-bold text-capitalize mt-3 mb-4">Follow Us</h6></div>
+
+                <div class="row">   <div class="col-2">
+                  <a href="#">
+                  <img id="img" src="<?= base_url(); ?>/assets/img/logo_foot_fb1.png"></a></div>
+                  <div class="col-2">
+                    <a href="#">
+                  <img id="img" src="<?= base_url(); ?>/assets/img/logo_foot_twitter1.png"></a></div>
+                  <div class="col-2 ">
+                    <a id="img" href="#">
+                  <img src="<?= base_url(); ?>/assets/img/logo_foot_in1.png"></a></div>
+                  <div class="col-2 ">
+                    <a href="#">
+                  <img id="img" src="<?= base_url(); ?>/assets/img/logo_foot_yt1.png"></a></div>
+                  
+                  </div>
+ 
+                </div> 
+
+          </div>
+
+
+        </div>
+
+        <div class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-5 mx-auto">
+              <img style="margin-right: 20px ;width:100px;height: 50px "src="<?= base_url(); ?>/assets/img/logo_foot_bli.png"> 
+              <span style="font-size: 60%">© 2011-2019 PT. Global Tiket Network. All Rights Reserved</span>  
           </div>
         </div>
-        <div class="col-4"> </div>
-       
-        </div>
-      </div>
-    </div>      
+    </div>
+
+        
   </footer>
 
-  <br><br><br>
 </body>
 </html>
