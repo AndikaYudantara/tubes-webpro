@@ -22,6 +22,11 @@ class User_model extends CI_model{
 	public function insert($data){
 		$this->db->insert('user', $data);
 	}
+
+	public function search_by_email($email){
+		$this->db->where('email', $email);
+		return $this->db->get('user')->row();
+	}
 	
 }
 

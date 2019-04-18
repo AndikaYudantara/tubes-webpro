@@ -8,10 +8,13 @@ class Login extends CI_Controller{
 	}
 
 	public function index(){
-		#$this->session->sess_destroy();
 		$data['title'] = 'tiket.com | Hotel, Pesawat, Kereta Api, Sewa Mobil, Konser';
 		$this->load->view('templates/header', $data);
-		$this->load->view('templates/navbar');
+		if($this->session->userdata('username') == NULL){
+			$this->load->view('templates/login_navbar');
+		}else{
+			$this->load->view('templates/default_navbar');			
+		}
 		$this->load->view('login/index');
 		$this->load->view('templates/footer');
 	}
@@ -21,9 +24,9 @@ class Login extends CI_Controller{
 		$this->form_validation->set_rules('password', 'password', 'required');
 
 		if($this->form_validation->run() == FALSE){
-			redirect(base_url(''));
+			redirect(base_url());
 		}else if($this->User_model->validate($this->input->post('email'), $this->input->post('password')) == TRUE){
-			$this->session->set_userdata('email', $this->input->post('email'));
+			$this->session->set_userdata('username', $this->User_model->search_by_email($this->input->post('email'))->username);
 			redirect(base_url());
 		}else{
 			redirect(base_url());

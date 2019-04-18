@@ -1,0 +1,118 @@
+#nav1{
+
+	margin-top:20px;
+}
+
+#nav2{
+	background-color: white;
+	text-decoration-color: blue;
+	font-weight: bold;
+}
+
+#g1{
+	margin-left: 2%;
+}
+#td1{
+	font-size: 120%;
+}
+
+#td2{
+	font-size: 120%;
+	text-decoration-color: 
+}
+
+#hr { 
+ border: 0.5px solid gray;
+ border-radius: 5px;
+} 
+
+#b1{
+	text-decoration-color: white;
+	height: 50px;
+	width: 125%;
+	background-color:  #3b5998;
+	border: none;
+	color: white;
+	border-radius: 4px;
+}
+#b2:hover{
+background-color: #e6e6e6;
+}
+#b2:focus{
+	background-color: #cccccc;
+}
+#b21:hover{
+background-color: #e6e6e6;
+}
+
+#b2{
+	border-radius: 4px;
+	height: 50px;
+	width: 125%;
+	background-color: white;
+	border: 1px solid black;
+}
+
+#box{
+	
+	height: 650px;
+	border-radius: 5px;
+	}
+#box2{
+	width: 40%;
+	margin-left: 30px;
+	border: 1px solid #ddd;
+	height: 100%;
+}
+
+#nama,#email,#pass,#re-pass{
+
+
+    border-top: none;
+	border-right: none;
+	border-left: none;
+	text-decoration-color: gray;
+	border-bottom: 0.25px groove ;
+	width: 80%;
+	margin-bottom: 40px;
+	outline: none;
+}
+
+#nama,#email,#pass,#re-pass:focus{
+
+border-bottom-color: #0000ff;
+
+}
+
+#hr1 { 
+ border: 0.5px solid #ddd;
+ border-radius: 5px;
+ margin-top: 120px;
+} 
+
+
+#span{
+	color: #ff9900;
+}
+
+
+
+#btn:hover{
+	background-color: #ffbf80;
+}
+
+#btn{
+	width: 80% ;
+	 height: 50px;
+	 margin-top:  30px; 
+	 margin-bottom: 20px;
+	 background-color: #ff6600;
+	 color: white;
+	 border: none;border-radius: 5px;
+}
+
+#hr1 { 
+ border: 0.5px solid #ddd;
+ border-radius: 5px;
+ margin-top: 120px;
+} 
