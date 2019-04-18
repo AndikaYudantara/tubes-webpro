@@ -80,6 +80,9 @@ background-color: #e6e6e6;
 	margin-top: 20px;
 	border-bottom: 0.75px groove ;
 }
+#form1{
+	width: 300%;
+}
 
 #pass:focus{
 	border-bottom-color: #0000ff;

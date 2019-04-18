@@ -16,7 +16,7 @@ class Login extends CI_Controller{
 			$this->load->view('templates/default_navbar');			
 		}
 		$this->load->view('login/index');
-		$this->load->view('templates/footer');
+		$this->load->view('templates/footer_login');
 	}
 
 	public function validate(){

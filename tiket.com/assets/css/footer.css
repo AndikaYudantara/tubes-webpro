@@ -1,0 +1,35 @@
+ul li a{
+color: #a6a6a6;
+font-size: 75%
+}
+ul li a:hover{
+	color: #ff6600;
+	text-decoration : none;
+}
+
+h5{
+	text-transform: lowercase;
+}
+ul li{
+		list-style-type: none;
+}
+
+#inp1{
+	color: #cccccc;
+	display: inline-block;
+}
+
+ul li a img:hover{
+cursor: pointer;
+}
+#g1{
+	margin-top: 5px;
+}
+#g1:hover{
+	cursor: pointer;
+}
+
+#img:hover{
+cursor: pointer;
+}
+

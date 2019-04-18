@@ -16,7 +16,7 @@ class Register extends CI_Controller{
 			$this->load->view('templates/default_navbar');			
 		}
 		$this->load->view('register/index');
-		$this->load->view('templates/footer');
+		$this->load->view('templates/footer_login');
 	}
 
 	public function insert(){
