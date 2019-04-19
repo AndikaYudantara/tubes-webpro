@@ -107,7 +107,7 @@ img {vertical-align: middle;}
   padding-top: 100px;
 }
 .floating-window-main-hotel{
-  display: none;
+  display: block;
 }
 .floating-window-main-pesawat{
   display: block;
