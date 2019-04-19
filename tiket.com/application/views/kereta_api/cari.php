@@ -3,7 +3,7 @@
       <div class="col-md-6" style="color: white;">
       <div class="wrapper">
         <h2 style="font-size: 20px;">(<?= $this->session->userdata('stasiun_berangkat'); ?>)->(<?= $this->session->userdata('stasiun_tiba'); ?>)</h2>
-        <p style="font-size: 16px;"><?= $this->session->userdata('tanggal_pergi'); ?> | <?= $this->session->userdata('jumlah_penumpang'); ?> Dewasa</p>
+        <p style="font-size: 16px;"> <?= $this->session->userdata('tanggal_pergi'); ?> - <?= $this->session->userdata('tanggal_pulang'); ?> | <?= $this->session->userdata('jumlah_penumpang'); ?> Dewasa</p>
       </div>        
       </div>
       <div class="col-md-6 text-right" style="color: white;">

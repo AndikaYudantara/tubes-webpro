@@ -26,7 +26,7 @@ class Kereta_api extends CI_Controller{
 		$this->form_validation->set_rules('stasiun_berangkat', 'stasiun_berangkat', 'required');
 		$this->form_validation->set_rules('stasiun_tiba', 'stasiun_tiba', 'required');
 		$this->form_validation->set_rules('tanggal_pergi', 'tanggal_pergi', 'required');
-#		$this->form_validation->set_rules('tanggal_pulang', 'tanggal_pulang', 'required');
+			$this->form_validation->set_rules('tanggal_pulang', 'tanggal_pulang', 'required');
 		$this->form_validation->set_rules('jumlah_penumpang', 'jumlah_penumpang', 'required');
 
 		if($this->form_validation->run() == FALSE){
@@ -39,7 +39,8 @@ class Kereta_api extends CI_Controller{
 				'stasiun_berangkat' => $this->input->post('stasiun_berangkat'),
 				'stasiun_tiba' => $this->input->post('stasiun_tiba'),
 				'tanggal_pergi' => $this->input->post('tanggal_pergi'),
-				'jumlah_penumpang' => $this->input->post('jumlah_penumpang')
+				'jumlah_penumpang' => $this->input->post('jumlah_penumpang'),
+				'tanggal_pulang' => $this->input->post('tanggal_pulang')
 			);
 			$this->session->set_flashdata($info_pencarian);
 

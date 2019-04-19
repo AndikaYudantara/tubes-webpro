@@ -3,8 +3,9 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css"  href="<?= base_url(); ?>/assets/css/footer.css">
 
+
+
 <img style="width: 100%"N src="<?= base_url();?>/assets/img/tes.png">
-  
 
 
 

@@ -112,8 +112,8 @@
 									<h4 style="font-size: 15px; color: #264770;">Penumpang Dewasa <?= $i; ?></h4>
 								</div>
 								<div class="wrapper p-4">
-									<!?= form_open('Kereta_api/tambah_penumpang'); ?>
-									<!form method="post">
+									
+									<form method="post" action="<!?= base_url('Kereta_api/tambah_penumpang'); ?>">
 									<div class="checkbox">
 										<label><input type="checkbox"><b>Sama dengan kontak</b></label>
 									</div>
