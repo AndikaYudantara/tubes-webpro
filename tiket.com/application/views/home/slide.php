@@ -1,4 +1,4 @@
-
+<body onload="showSlides(1)">
 <div class="container-fluid" id="slide">
 	<link rel="stylesheet" type="text/css" href="<?= base_url(); ?>/assets/css/home.css">
 	<script type="text/javascript" src="<?= base_url(); ?>/assets/js/home.js"></script>
@@ -61,4 +61,4 @@
 		<span class="dot" onclick="currentSlide(12)"></span> 
 	</div>
 </div>
-
+</body>
