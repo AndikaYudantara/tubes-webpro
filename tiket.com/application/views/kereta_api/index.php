@@ -30,7 +30,7 @@
 
 	
 	<div class="container-fluid">
-		<div class="row py-4" style="background: rgba(34, 34, 34, 0.15); padding-left: 150px; padding-right: 150px; position: fixed;">
+		<div class="row py-4" style="background: rgba(34, 34, 34, 0.15); padding-left: 150px; padding-right: 150px; position: absolute;">
 			<form class="form-inline mx-auto px-auto" method="post" style="color: #888888; font-size: 14px;" accept-charset="utf-8" action="<?= base_url('Kereta_api/cari'); ?>">
 				<div class="input-group">
 					<div class="col border-top-0 border-bottom-0 border-left-0" style="background: white; border: solid 0.5px;">
@@ -204,16 +204,16 @@
 		
 	</div>
 
-	<div class="col-4 mx-auto" style="margin-bottom: 100px;">
+	<div class="col mx-auto" style="margin-bottom: 100px;margin-top: 50px;">
 		<div style="font-weight: bold;font-size: 150%;margin-bottom: 40px" class="row">
-			Cara Pesan Tiket Kereta Api
+			<div class="col-4 mx-auto">Cara Pesan Tiket Kereta Api</div>
+			
 		</div>
 		<div class="row">
-			<img style="margin-left: -180px;" src="<?= base_url(); ?>/assets/img/pesan.png" >
-
+			<div class="col-4 mx-auto"><img style="margin-left: -180px;" src="<?= base_url(); ?>/assets/img/pesan.png" ></div>
 		</div>
 		<div class="row" style="margin-top: 20px; margin-left: 100px;">
-			<div class="col mx-auto">
+			<div class="col-4 mx-auto">
 			<button id="btn" type="submit" name="Selengkapnya" class="btn ">Selengkapnya</button>
 			</div>
 		</div>
