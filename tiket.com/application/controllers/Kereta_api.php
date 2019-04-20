@@ -76,7 +76,7 @@ class Kereta_api extends CI_Controller{
 			$this->load->view('templates/default_navbar');			
 		}
 		$this->load->view('kereta_api/order', $data);
-		$this->load->view('templates/footer');
+		$this->load->view('templates/footer_login');
 	}
 
 	public function tambah_penumpang($jumlah_penumpang){

@@ -27,6 +27,7 @@ class User_model extends CI_model{
 		$this->db->where('email', $email);
 		return $this->db->get('user')->row();
 	}
+
 	
 }
 

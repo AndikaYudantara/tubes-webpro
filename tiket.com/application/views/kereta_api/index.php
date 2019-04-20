@@ -101,7 +101,7 @@
 						
 					</div>
 
-						<div class="col-4" style="margin-left: -100px;border: ridge .5px;padding: 2em;height: 200px;width: 100%" >
+						<div class="col-4" style="margin-left: -100px;border: ridge .5px;border-left: none;padding: 2em;height: 200px;width: 100%" >
 
 								<div style="margin-bottom: 10px;font-size: 100%;font-weight: bold;text-align: left;" class="row">
 									Partner Online No.1 PT.KAI

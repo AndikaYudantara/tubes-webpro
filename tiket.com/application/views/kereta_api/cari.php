@@ -33,6 +33,7 @@
         <th>Harga</th>
         <th></th>
       </thead>
+     
       <tbody>
         <?php foreach($kereta as $krt){ ?><tr>
           <td><span style="font-size: 16px;"><?= $krt['nama']; ?></span><br><span style="color: #888888"><?= $krt['kelas']; ?></span></td>

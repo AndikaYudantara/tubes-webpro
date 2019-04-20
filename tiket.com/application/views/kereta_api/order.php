@@ -10,7 +10,7 @@
 					</ul>
 					<ul class="col-md-12 list-inline border border-left-0 border-right-0 my-0" style="padding: 10px; background-color: #E4EBF5">
 						<li class="list-inline-item" style="font-size: 20px;"><b><?= $kereta->stasiun_berangkat?></b><span style="color: #2F5995"> > </span><b><?= $kereta->stasiun_tiba?></b></li>
-						<li class="list-inline-item"><b><?= date_create_from_format('h:i:s', $kereta->waktu_berangkat)->format('h:i'); ?>-<?= date_create_from_format('h:i:s', $kereta->waktu_tiba)->format('h:i'); ?></b><br><span><?= $kereta->tanggal ?></span></li>
+						<li class="list-inline-item"><b><?= date_create_from_format('Y:m:d', $kereta->waktu_berangkat)->format('h:i'); ?>-<?= date_create_from_format('Y:m:d', $kereta->waktu_tiba)->format('h:i'); ?></b><br><span><?= $kereta->tanggal ?></span></li>
 						<li class="list-inline-item"><b><?= $kereta->kelas ?></b></li>
 						<li class="list-inline-item text-center"><span style="color: #2F5995;"><b>IDR <?= $kereta->harga*$this->session->userdata('jumlah_penumpang'); ?></b></span><br><span>Subtotal</span></li>
 					</ul>
@@ -144,7 +144,7 @@
 											<small class="form-text text-muted">Untuk penumpang di bawah 17 tahun, wajib diisi dengan tanggal lahir, format ddmmyyyy. Contoh: 17071999</small>
 										</div>
 									</div>
-									<!/form>
+									</form>
 								</div>
 							<?php } ?>
 							<div class="wrapper p-4 text-right">
