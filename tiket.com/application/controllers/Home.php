@@ -13,7 +13,7 @@ class Home extends CI_Controller {
 			$this->load->view('templates/default_navbar');			
 		}
 		$this->load->view('home/slide');
-		//$this->load->view('home/cari');
+		$this->load->view('home/search-box');
 		$this->load->view('home/body');
 		$this->load->view('templates/footer');
 	}
