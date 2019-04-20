@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Home extends CI_Controller {
 
 	public function index(){
 		//$this->load->model('Home_model');
@@ -12,7 +12,9 @@ class Welcome extends CI_Controller {
 		}else{
 			$this->load->view('templates/default_navbar');			
 		}
-		$this->load->view('home/index');
+		$this->load->view('home/slide');
+		$this->load->view('home/search-box');
+		$this->load->view('home/body');
 		$this->load->view('templates/footer');
 	}
 
