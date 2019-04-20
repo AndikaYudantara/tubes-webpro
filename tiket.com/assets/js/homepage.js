@@ -23,23 +23,6 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+  setTimeout(function() {currentSlide(n+1)}, 10000);
 }
 
-// function show_pesawat(){
-//   document.getElementsById("main-pesawat").display = block;
-//   document.getElementsById("main-hotel").display = none;
-// }
-// function show_hotel(){
-//   document.getElementsById("main-pesawat").display = none;
-//   document.getElementsById("main-hotel").display = block;
-// }
-// $(document).ready(function(){
-//         $('#pesawat').on('click', function(){
-//             show_pesawat();
-//         });
-//     });
-// $(document).ready(function(){
-//         $('#hotel').on('click', function(){
-//             show_hotel();
-//         });
-//     });

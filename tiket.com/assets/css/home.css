@@ -10,12 +10,12 @@ img {vertical-align: middle;}
   padding-bottom: 75px;
   z-index: 1;
 
-
 }
 .mySlides img{
   max-width: 1000px;
   z-index: 1;
   float: center;
+
 }
 
 /* Next & previous buttons */
@@ -36,10 +36,10 @@ img {vertical-align: middle;}
 
 /* Position the "next button" to the right */
 .next {
-  right: 175px;
+  right: 180px;
 }
 .prev {
-  left: 175px;
+  left: 180px;
 }
 
 /* On hover, add a black background color with a little bit see-through */

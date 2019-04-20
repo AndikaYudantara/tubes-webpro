@@ -1,9 +1,9 @@
 <body onload="showSlides(1)">
 <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>/assets/css/home.css">
-<script type="text/javascript" src="<?= base_url(); ?>/assets/js/home.js"></script>
+<script type="text/javascript" src="<?= base_url(); ?>/assets/js/homepage.js"></script>
 
 <div class="container-fluid" id="slide">
-	<div class="slideshow-container text-center">
+	<div class="slideshow-container text-center" style="border-radius: 15px">
 
 		<div class="mySlides">
 		  <img src="<?= base_url(); ?>/assets/img/slide14.jpg" style="width:100%">
@@ -42,7 +42,7 @@
 		  <img src="<?= base_url(); ?>/assets/img/slide12.jpg" style="width:100%">
 		</div>
 
-		<a class="prev" onclick="plusSlides(-1)" style="z-index: 1">&#10094;</a>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 		<div style="text-align:center;">
