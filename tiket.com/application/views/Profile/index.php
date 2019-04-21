@@ -138,8 +138,19 @@
 			<div class="col" style="padding: 2em;padding-top: 1em;padding-left: 2.5em;">
 				<div class="row" style="font-weight: 500;font-size: 120%">Tuan/Nyonya <?=  $this->session->userdata('username'); ?></div>
 				<div class="row" style="margin-top: 10px;"> <?=  $this->session->userdata('email'); ?></div>
-				<div align="right">
-					asdfadnajdbasj
+			</div>
+		</div>
+
+		<div class="row" style="background-color: white;height: 185px;border-radius: 8px;border: solid .5px #ddd; margin-top: 15px">
+			<div class="col" style="padding: 2em;padding-top: 1em;padding-left: 2.5em;">
+				<div class="row">
+					<h4>Akun Sosial</h4>
+				</div>
+				<div class="row">
+					<p style="color: #888">Hubungkan akun sosial anda untuk proses log in yang lebih mudah</p>
+				</div>
+				<div class="row" style="margin-top: 10px;">
+					<a href="#"><img src="<?= base_url();?>/assets/img/logo_g.png" style="height: 60px; width: 60px; border: 1px solid #ccc; border-radius: 5px; padding: 10px"></a>
 				</div>
 			</div>
 		</div>

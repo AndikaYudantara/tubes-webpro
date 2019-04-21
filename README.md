@@ -2,9 +2,9 @@
 
 Anggota:
 Elsha Nursyifa Anindya(1301164637);
-Gerry Fernando(1301170387'0;
+Gerry Fernando(1301170387);
 Annisa Rahmah Sari (1301174237);
-Andika Yudantara
+Andika Yudantara (1301174213)
 
 
 Link untuk buka web:

@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 <style >
 	
  #g1:hover{
@@ -6,6 +7,8 @@
     transition: width 2s, height 4s;
  }
 </style>
+=======
+>>>>>>> 71ea4fee5a25ea375f63ed623129135325ace452
  <div class="container-fluid">
  	<div class="text-center">
  		<img src="<?= base_url(); ?>/assets/img/smarts.jpg">
@@ -50,7 +53,7 @@
 		      <a href="#"><img src="<?= base_url(); ?>/assets/img/k.jpg"></a>
 		    </div>
 		</div>
-		<button style="margin: 50px; border: 50px; padding: 10px">Masih Banyak Lagi</button>
+		<button style="margin: 50px; border: 50px; padding: 10px; cursor: pointer; border-radius: 10px">Masih Banyak Lagi</button>
 
 		<h1 style="padding-top: 150px">Kenapa memesan di tiket.com?</h1>
 		<img src="<?= base_url(); ?>/assets/img/kenapa.jpg">
@@ -62,7 +65,7 @@
 			<div class="col-6 col-md-4"  style="padding-top: 30px; background-color: #f2f7fd;text-align: left;">
 				<h1>Mudahnya Mencicil di tiket.com</h1>
 				<p style="font-size: 20px;">Pesan sekarang dan cicil pembayarannya dengan satu klik. Iya, semudah itu! Program cicilan dapat digunakan untuk membayar penerbangan, hotel, entertainment, dan sewa mobil. Bayar dalam 3,6 atau 12 bulan, terserah Anda! Program cicilan ini dapat dinikmati oleh pemegang kartu bank partner kami.</p>
-				<button style="border: 30px; padding: 10px">Selengkapnya</button>
+				<button style="border: 30px; padding: 10px; cursor: pointer; border-radius: 10px">Selengkapnya</button>
 			</div>
 		</div>
 
@@ -70,7 +73,7 @@
 			<div class="col"  style="background-color: #f2f7fd;text-align: left;">
 				<h1>Partner Kami</h1>
 				<p style="font-size: 20px; max-width: 500px">Anda adalah prioritas kami. Oleh karena itu kami bekerja sama dengan berbagai penyedia jasa transportasi, jaringan hotel dan penyedia hiburan untuk memastikan agar perjalanan Anda selalu nyaman dan menyenangkan, ke manapun Anda pergi.</p>
-				<button style="border: 300px; left: : 150px ; padding: 10px">Selengkapnya</button>
+				<button style="border: 300px; left: 150px; padding: 10px; cursor: pointer; border-radius: 10px">Selengkapnya</button>
 			</div>
 			<div class="col">
 				<img src="<?= base_url(); ?>/assets/img/partner.svg">
