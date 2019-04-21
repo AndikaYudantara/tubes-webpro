@@ -1,3 +1,11 @@
+
+<style >
+	
+ #g1:hover{
+    width: 100%;
+    transition: width 2s, height 4s;
+ }
+</style>
  <div class="container-fluid">
  	<div class="text-center">
  		<img src="<?= base_url(); ?>/assets/img/smarts.jpg">
@@ -5,24 +13,24 @@
  		<p>Jelajahi Indonesia dengan mengeksplor kekayaannya di berbagai destinasi populer</p>
  		<div class="row">
 		    <div class="col">
-		      <a href="#"><img src="<?= base_url(); ?>/assets/img/medan.jpg"></a>
+		      <a href="#"><img id="g1" src="<?= base_url(); ?>/assets/img/medan.jpg"></a>
 		    </div>
 		    <div class="col">
-		      <a href="#"><img src="<?= base_url(); ?>/assets/img/makassar.jpg"></a>
+		      <a href="#"><img id="g1" src="<?= base_url(); ?>/assets/img/makassar.jpg"></a>
 		    </div>
 		    <div class="col">
-		      <a href="#"><img src="<?= base_url(); ?>/assets/img/mataram.jpg"></a>
+		      <a href="#"><img id="g1" src="<?= base_url(); ?>/assets/img/mataram.jpg"></a>
 		    </div>
 		</div>
 		<div class="row">
 		    <div class="col">
-		      <a href="#"><img src="<?= base_url(); ?>/assets/img/manado.jpg"></a>
+		      <a href="#"><img id="g1" src="<?= base_url(); ?>/assets/img/manado.jpg"></a>
 		    </div>
 		    <div class="col">
-		      <a href="#"><img src="<?= base_url(); ?>/assets/img/makassar2.jpg"></a>
+		      <a href="#"><img id="g1" src="<?= base_url(); ?>/assets/img/makassar2.jpg"></a>
 		    </div>
 		    <div class="col">
-		      <a href="#"><img src="<?= base_url(); ?>/assets/img/malang.jpg"></a>
+		      <a href="#"><img id="g1" src="<?= base_url(); ?>/assets/img/malang.jpg"></a>
 		    </div>
 		</div>
 
