@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 <style >
 	
  #g1:hover{
@@ -7,8 +6,7 @@
     transition: width 2s, height 4s;
  }
 </style>
-=======
->>>>>>> 71ea4fee5a25ea375f63ed623129135325ace452
+
  <div class="container-fluid">
  	<div class="text-center">
  		<img src="<?= base_url(); ?>/assets/img/smarts.jpg">
