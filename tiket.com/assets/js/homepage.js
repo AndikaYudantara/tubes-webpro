@@ -26,3 +26,7 @@ function showSlides(n) {
   setTimeout(function() {currentSlide(n+1)}, 10000);
 }
 
+
+
+
+

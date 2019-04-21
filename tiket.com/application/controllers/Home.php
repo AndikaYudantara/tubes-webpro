@@ -18,5 +18,40 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
-	
+	public function cari_penerbangan(){
+		$data = array(
+			'dari' => $_POST['dari'],
+			'ke' => $_POST['ke'],
+			'tgl_pergi' => $_POST['tanggal_pergi'],
+			'tgl_pulang' => $_POST['tanggal_pulang'],
+			'penumpang' => $_POST['penumpang'],
+			'kelas_kabin' => $_POST['kelas_kabin']
+		);
+		switch($data['dari']) {
+		  case "Bandung":
+		    $data['dari'] = 1;
+		    break;
+		  case "Jakarta":
+		    $data['dari'] = 2;
+		    break;
+		  default:
+		    // code block
+		}
+		switch($data['ke']) {
+		  case "Bandung":
+		    $data['ke'] = 1;
+		    break;
+		  case "Jakarta":
+		    $data['ke'] = 2;
+		    break;
+		  default:
+		    // code block
+		}
+	}
+
+
+	public function cari_hotel(){
+
+	}
+
 }
