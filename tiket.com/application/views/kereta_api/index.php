@@ -28,10 +28,7 @@
   #hover,#hover1,#hover2,#hover3,#hover4,#hover5{
   	display: none;
   }
-
  
-
-
 </style>
 
 	
@@ -491,8 +488,6 @@
 		document.getElementById("hover").style.display="none";
 		document.getElementById("align-bottom").style.display="block";
 	}
-
-
 	document.getElementById("body1").onmouseover= function(){
 		document.getElementById("hover1").style.display="block";
 		document.getElementById("align-bottom1").style.display="none";}
@@ -500,7 +495,6 @@
 		document.getElementById("hover1").style.display="none";
 		document.getElementById("align-bottom1").style.display="block";
 	}
-
 	document.getElementById("body2").onmouseover= function(){
 		document.getElementById("hover2").style.display="block";
 		document.getElementById("align-bottom2").style.display="none";}
@@ -508,7 +502,6 @@
 		document.getElementById("hover2").style.display="none";
 		document.getElementById("align-bottom2").style.display="block";
 	}
-
 	document.getElementById("body3").onmouseover= function(){
 		document.getElementById("hover3").style.display="block";
 		document.getElementById("align-bottom3").style.display="none";}
@@ -516,7 +509,6 @@
 		document.getElementById("hover3").style.display="none";
 		document.getElementById("align-bottom3").style.display="block";
 	}
-
 	document.getElementById("body4").onmouseover= function(){
 		document.getElementById("hover4").style.display="block";
 		document.getElementById("align-bottom4").style.display="none";
@@ -525,7 +517,6 @@
 		document.getElementById("hover4").style.display="none";
 		document.getElementById("align-bottom4").style.display="block";
 	}
-
 	document.getElementById("body5").onmouseover= function(){
 		document.getElementById("hover5").style.display="block";
 		document.getElementById("align-bottom5").style.display="none";}

@@ -19,9 +19,6 @@ class Profile extends CI_Controller{
 		$this->load->view('Profile/index');
 		$this->load->view('templates/footer_login');
 	}
-
-	
-
 	
 }
 ?>
