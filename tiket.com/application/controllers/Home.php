@@ -11,9 +11,9 @@ class Home extends CI_Controller {
 		$data['title'] = 'tiket.com | Hotel, Pesawat, Kereta Api, Sewa Mobil, Konser';
 		$this->load->view('templates/header', $data);
 		if($this->session->userdata('username') == NULL){
-			$this->load->view('templates/login_navbar');
+			$this->load->view('templates/home_login_navbar');
 		}else{
-			$this->load->view('templates/default_navbar');			
+			$this->load->view('templates/home_default_navbar');			
 		}
 		$this->load->view('home/slide');
 		$this->load->view('home/search-box');

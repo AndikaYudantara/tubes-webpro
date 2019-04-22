@@ -37,7 +37,7 @@
       <div class="container" style="margin: 14px 0px 0px; padding: 0px 15px;">
       <ul class="navbar-nav">
         <li class="navbar-nav">
-          <a class="nav-link disabled" role="button" href="#" style="color: black;">Pesawat</a>
+          <a class="nav-link" role="button" href="#" style="color: black;">Pesawat</a>
         </li>
         <li class="navbar-nav">
           <a class="nav-link disabled" role="button" href="#" style="color: black;">Hotel</a>

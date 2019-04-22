@@ -2,6 +2,7 @@
   <style type="text/css">
     #swap{
       transition: transform .5s;
+      
     }
     #swap:hover{
       transform: rotate(180deg);
@@ -42,14 +43,14 @@
           </div>
           <form action="Home.php" method="post">
             <div class="form-row">
-              <div class="form-group col-md-4" style="padding-left: 50px">
+              <div class="form-group col-md-5" style="padding-left: 50px">
                 <label for="dari">Dari</label>
                 <input type="text" class="form-control" id="dari" placeholder="Jakarta (JKTC)" name="dari">
               </div>
-              <div class="col-md-4 text-center">
-                <img id="swap" src="<?= base_url(); ?>/assets/img/swap.jpg" style="border-radius: 50%; padding: 28px;">
+              <div class="col-md-2 text-center">
+                <img id="swap" src="<?= base_url(); ?>/assets/img/swap.png" style=";border-radius: 50%; padding: 26px">
               </div>
-              <div class="form-group col-md-4" style="padding-right: 50px">
+              <div class="form-group col-md-5" style="padding-right: 50px">
                 <label for="ke">Ke</label>
                 <input type="text" class="form-control" id="ke" placeholder="Ngurah Rai (DPS)" name="ke">
               </div>
