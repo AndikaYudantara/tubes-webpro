@@ -149,7 +149,7 @@
 				<button class="btn " id="ubah_btn" style="float: right; margin-top: -45px; border: 1px solid #ff7200" onclick="ubah()">Ubah</button>
 			</div>
 		</div>
-		<div class="row" id="isi" style="background: #fff; padding: 10px 25px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; display: none;">
+		<div class="row" id="isi" style="background: #fff; padding: 10px 25px; border-top: 1px solid #ccc; border-radius: 0 0 10px 10px; display: none;">
 			<?= form_open(base_url('Profile/update')) ?>
 			<form method="post" style="width: 200%">
 				<div class="row" style="margin-bottom: 15px; margin-top: 15px">
@@ -167,12 +167,12 @@
 					<div class="col-md-8"><input type="text" name="uname" style="width: 100%; border: none; border-bottom: 1px solid #ccc; font-size: 18px"></div>
 				</div>
 				
-				<div class="row" id="simpan" style="background: #fff ;padding: 15px; border-radius: 0 0 10px 10px; display: none;">
+				<div class="row" id="simpan" style="background: #fff ;padding: 15px;">
 					<div class="col-md-6">
 						<p style="color: #777; margin-top: 10px"><span style="color: red">*</span> Mohon tambahkan informasi profil Anda yang lebih lengkap di Smart Traveler</p>
 					</div>
 					<div class="col-md-6">		
-						<button class="btn " id="btn" onclick="batal()" style="background: #fff; color: #777; margin-top: 15px; margin-left: 70px;">Batal</button>
+						<button class="btn " id="btn" onclick="batal()" style="background: #fff; color: #777; margin-top: 15px; margin-left: 160px;">Batal</button>
 						<button type="submit" class="btn " id="btn" onclick="simpan()" style="background: #FF7200; color: #fff; margin-top: 15px; margin-left: 10px">Simpan</button>
 						
 					</div>
@@ -180,8 +180,9 @@
 			</form>
 			<?= form_open(base_url('Profile/delete')) ?>
 			<form>
-				<button class="btn " id="btn" style="background: #ff0000;color: #fff; margin-left: 10px; margin-top: 15px">Delete</button>
+				<button class="btn " id="btn" style="background: #ff0000;color: #fff; margin: 15px; margin-bottom: 25px">Delete Akun</button>
 			</form>
+			
 		</div>
 		
 
@@ -207,21 +208,18 @@
 <script type="text/javascript">
 	function ubah(){
 		document.getElementById("isi").style.display = "flex";
-		document.getElementById("simpan").style.display = "flex";
 		document.getElementById("head").style.borderRadius = "15px 15px 0 0";
 		document.getElementById("ubah_btn").style.display = "none"
 
 	}
 	function batal(){
 		document.getElementById("isi").style.display = "none";
-		document.getElementById("simpan").style.display = "none";
-		document.getElementById("head").style.borderRadius = "15px 15px 15px 15px";
+		document.getElementById("head").style.borderRadius = "15px";
 		document.getElementById("ubah_btn").style.display = "flex"
 	}
 	function simpan(){
 		
 		document.getElementById("isi").style.display = "none";
-		document.getElementById("simpan").style.display = "none";
 		document.getElementById("ubah_btn").style.display = "flex"
 	}
 </script>
