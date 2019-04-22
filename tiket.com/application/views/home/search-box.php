@@ -1,6 +1,13 @@
   <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>/assets/css/home.css">
+  <style type="text/css">
+    #swap{
+      transition: transform .5s;
+    }
+    #swap:hover{
+      transform: rotate(180deg);
+    }
+  </style>
 
- 
   <div class="container-fluid text-center" style="z-index: 1; position: relative;">
     <div class="search-box" >
       <!-- HEADER -->
@@ -40,7 +47,7 @@
                 <input type="text" class="form-control" id="dari" placeholder="Jakarta (JKTC)" name="dari">
               </div>
               <div class="col-md-4 text-center">
-                <img src="<?= base_url(); ?>/assets/img/swap.jpg" style="border-radius: 50%; padding: 28px;">
+                <img id="swap" src="<?= base_url(); ?>/assets/img/swap.jpg" style="border-radius: 50%; padding: 28px;">
               </div>
               <div class="form-group col-md-4" style="padding-right: 50px">
                 <label for="ke">Ke</label>
@@ -65,7 +72,7 @@
                 <input type="text" id="kelas_kabin" class="form-control" name="kelas_kabin">
               </div>
             </div>
-            <button type="submit" style="padding: 15px; margin: 30px; margin-left: 840px; border: 30px;cursor: pointer; border-radius: 10px">Cari Penerbangan</button>
+            <button class="btn" type="submit" style="padding: 15px; margin: 30px; margin-left: 840px; color: #fff; background-color: #ff7200">Cari Penerbangan</button>
           </form>
         </div>
 
@@ -109,7 +116,7 @@
                 <input type="text" id="bintang" class="form-control" name="bintang">
               </div>
             </div>
-            <button type="submit" style="padding: 15px 50px; margin: 30px; margin-left: 840px; border: 30px;cursor: pointer; border-radius: 10px">Cari Hotel</button>
+            <button class="btn" type="submit" style="padding: 15px 50px; margin: 30px; margin-left: 840px; color: #fff; background-color: #ff7200">Cari Hotel</button>
           </form>  
         </div>
       </div>

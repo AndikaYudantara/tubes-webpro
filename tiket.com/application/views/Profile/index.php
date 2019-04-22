@@ -10,6 +10,13 @@
 	#a > span:hover{
 		color: gray;
 	}
+	.btn{
+		color: #ff7200;
+	}
+
+	.btn:hover{
+		background-color: #FF7200;
+		color: #ffffff;
 
 </style>
 
@@ -134,23 +141,57 @@
 			<span style="color:#FF7200;margin-right: 10px; ">Home</span> <span> > </span> <span style="margin-left: 10[x">Profil Saya</span>
 		</div>
 		<div class="row" style="font-size: 200%;font-weight: 400;margin-top: 20px;margin-bottom: 20px;">Profil Saya</div>
-		<div class="row" style="background-color: white;height: 100px;border-radius: 8px;border: solid .5px #ddd">
+
+		<div class="row" id="head" style="background-color: white;height: 100px;border-radius: 8px;border: solid .5px #ddd">
 			<div class="col" style="padding: 2em;padding-top: 1em;padding-left: 2.5em;">
 				<div class="row" style="font-weight: 500;font-size: 120%">Tuan/Nyonya <?=  $this->session->userdata('username'); ?></div>
 				<div class="row" style="margin-top: 10px;"> <?=  $this->session->userdata('email'); ?></div>
+				<button class="btn " id="ubah_btn" style="float: right; margin-top: -45px; border: 1px solid #ff7200" onclick="ubah()">Ubah</button>
+			</div>
+		</div>
+		<div class="row" id="isi" style="background: #fff; padding: 10px 25px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; display: none;">
+			<form style="width: 100%">
+				<div class="row" style="margin-bottom: 15px; margin-top: 15px">
+					<div class="col-md-4"><label for="titel" style="color: #777; font-size: 20px">Titel</label></div>
+					<div class="col-md-8">
+						<select name="titel" style="width: 100%; border: none; border-bottom: 1px solid #ccc; font-size: 18px">
+					    	<option value="Tuan">Tuan</option>
+					    	<option value="Nyonya">Nyonya</option>
+					    	<option value="Nona">Nona</option>
+					  	</select>
+					</div>	
+				</div>
+				<div class="row" style="margin-bottom: 15px; margin-top: 15px">
+					<div class="col-md-4"><label for="nama_depan" style="color: #777; font-size: 20px">Nama Depan</label></div>
+					<div class="col-md-8"><input type="text" name="nama_depan" style="width: 100%; border: none; border-bottom: 1px solid #ccc; font-size: 18px"></div>
+				</div>
+				<div class="row" style="margin-bottom: 15px; margin-top: 15px">
+					<div class="col-md-4"><label for="nama_belakang" style="color: #777; font-size: 20px">Nama Belakang</label></div>
+					<div class="col-md-8"><input type="text" name="nama_belakang" style="width: 100%;  border: none; border-bottom: 1px solid #ccc; font-size: 18px"></div>
+				</div>
+			</form>
+		</div>
+		<div class="row" id="simpan" style="background: #fff ;padding: 15px; border-radius: 0 0 10px 10px; display: none;">
+			<div class="col-md-8">
+				<p style="color: #777; margin-top: 10px"><span style="color: red">*</span> Mohon tambahkan informasi profil Anda yang lebih lengkap di Smart Traveler</p>
+			</div>
+			<div class="col-md-4">		
+				<button class="btn " id="btn" onclick="batal()" style="background: #fff; color: #777; margin-top: 15px; margin-left: 50px;">Batal</button>
+				<button class="btn " id="btn" style="background: #FF7200; color: #fff; margin-top: 15px; margin-left: 10px">Simpan</button>
 			</div>
 		</div>
 
 		<div class="row" style="background-color: white;height: 185px;border-radius: 8px;border: solid .5px #ddd; margin-top: 15px">
-			<div class="col" style="padding: 2em;padding-top: 1em;padding-left: 2.5em;">
-				<div class="row">
+			<div class="col">
+				<div class="row" style="margin : 15px 5px 0px 5px">
 					<h4>Akun Sosial</h4>
 				</div>
-				<div class="row">
+				<div class="row" style="margin : 0px 5px 5px 5px">
 					<p style="color: #888">Hubungkan akun sosial anda untuk proses log in yang lebih mudah</p>
 				</div>
-				<div class="row" style="margin-top: 10px;">
-					<a href="#"><img src="<?= base_url();?>/assets/img/logo_g.png" style="height: 60px; width: 60px; border: 1px solid #ccc; border-radius: 5px; padding: 10px"></a>
+				<div class="row" style="padding: 0px; padding-top: 10px; border-top: 1px solid #ccc">
+					<a href="#"><img src="<?= base_url();?>/assets/img/logo_g.png" style="height: 60px; width: 60px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-left: 15px; margin-top: 3px"></a>
+					<label style="margin-top: 20px; margin-left: 25px; font-weight: bold; font-size: 18px">Google</label>
 				</div>
 			</div>
 		</div>
@@ -158,3 +199,18 @@
    </div>
 </div>
 </div>
+
+<script type="text/javascript">
+	function ubah(){
+		document.getElementById("isi").style.display = "flex";
+		document.getElementById("simpan").style.display = "flex";
+		document.getElementById("head").style.borderRadius = "15px 15px 0 0";
+		document.getElementById("ubah_btn").style.display = "none"
+	}
+	function batal(){
+		document.getElementById("isi").style.display = "none";
+		document.getElementById("simpan").style.display = "none";
+		document.getElementById("head").style.borderRadius = "15px 15px 15px 15px";
+		document.getElementById("ubah_btn").style.display = "flex"
+	}
+</script>
