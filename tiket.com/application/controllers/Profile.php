@@ -19,6 +19,16 @@ class Profile extends CI_Controller{
 		$this->load->view('Profile/index');
 		$this->load->view('templates/footer_login');
 	}
+
+	public function update(){
+		$data =[
+			'username' => $this->input->post('uname', TRUE)
+		];
+			$this->Profil->update($this->session->userdata('username'),$data);
+			$this->session->sess_destroy();
+			redirect(base_url('/Login'));
+			
+	}
 	
 }
 ?>
