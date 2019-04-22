@@ -163,7 +163,7 @@
 					</div>
 				</div>
 				<div class="row" style="margin-bottom: 15px; margin-top: 15px">
-					<div class="col-md-4"><label for="uname" style="color: #777; font-size: 20px">Username</label></div>
+					<div class="col-md-4"><label for="uname" class="uname" style="color: #777; font-size: 20px">Username</label></div>
 					<div class="col-md-8"><input type="text" name="uname" style="width: 100%; border: none; border-bottom: 1px solid #ccc; font-size: 18px"></div>
 				</div>
 				
@@ -174,9 +174,13 @@
 					<div class="col-md-6">		
 						<button class="btn " id="btn" onclick="batal()" style="background: #fff; color: #777; margin-top: 15px; margin-left: 70px;">Batal</button>
 						<button type="submit" class="btn " id="btn" onclick="simpan()" style="background: #FF7200; color: #fff; margin-top: 15px; margin-left: 10px">Simpan</button>
-						<button class="btn " id="btn" style="background: #ff0000;color: #fff; margin-left: 10px; margin-top: 15px">Delete</button>
+						
 					</div>
 				</div>
+			</form>
+			<?= form_open(base_url('Profile/delete')) ?>
+			<form>
+				<button class="btn " id="btn" style="background: #ff0000;color: #fff; margin-left: 10px; margin-top: 15px">Delete</button>
 			</form>
 		</div>
 		

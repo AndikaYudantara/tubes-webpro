@@ -21,13 +21,24 @@ class Profile extends CI_Controller{
 	}
 
 	public function update(){
+		$this->form_validation->set_rules('uname', 'uname', 'required');
+		if($this->form_validation->run() == TRUE){
 		$data =[
 			'username' => $this->input->post('uname', TRUE)
 		];
 			$this->Profil->update($this->session->userdata('username'),$data);
 			$this->session->sess_destroy();
 			redirect(base_url('/Login'));
+		}else{
+			redirect(base_url('/Profile'));
 			
+	}
+	}
+
+	public function delete(){
+		$this->Profil->delete($this->session->userdata('username'));
+		$this->session->sess_destroy();
+			redirect(base_url('/Login'));
 	}
 	
 }
