@@ -134,11 +134,15 @@
       document.getElementById("plane").style.display = "block";
       document.getElementById("hotel").style.display = "none";
       document.getElementById("plane_logo_hover").style.display = "inline-block";
+      document.getElementById("hotel_logo_hover").style.display = "none";
+
 
     }
     function view_hotel(){
       document.getElementById("hotel").style.display = "block";
       document.getElementById("plane").style.display = "none"
+      document.getElementById("hotel_logo_hover").style.display = "inline-block";
+      document.getElementById("plane_logo_hover").style.display = "none";
     }    
 
     document.getElementById("plane_logo").onmouseover= function(){
