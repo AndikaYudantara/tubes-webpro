@@ -150,7 +150,8 @@
 			</div>
 		</div>
 		<div class="row" id="isi" style="background: #fff; padding: 10px 25px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; display: none;">
-			<form style="width: 100%">
+			<?= form_open(base_url('Profile/update')) ?>
+			<form method="post" style="width: 200%">
 				<div class="row" style="margin-bottom: 15px; margin-top: 15px">
 					<div class="col-md-4"><label for="titel" style="color: #777; font-size: 20px">Titel</label></div>
 					<div class="col-md-8">
@@ -162,24 +163,23 @@
 					</div>
 				</div>
 				<div class="row" style="margin-bottom: 15px; margin-top: 15px">
-					<div class="col-md-4"><label for="nama_depan" style="color: #777; font-size: 20px">Nama Depan</label></div>
-					<div class="col-md-8"><input type="text" name="nama_depan" style="width: 100%; border: none; border-bottom: 1px solid #ccc; font-size: 18px"></div>
+					<div class="col-md-4"><label for="uname" style="color: #777; font-size: 20px">Username</label></div>
+					<div class="col-md-8"><input type="text" name="uname" style="width: 100%; border: none; border-bottom: 1px solid #ccc; font-size: 18px"></div>
 				</div>
-				<div class="row" style="margin-bottom: 15px; margin-top: 15px">
-					<div class="col-md-4"><label for="nama_belakang" style="color: #777; font-size: 20px">Nama Belakang</label></div>
-					<div class="col-md-8"><input type="text" name="nama_belakang" style="width: 100%;  border: none; border-bottom: 1px solid #ccc; font-size: 18px"></div>
+				
+				<div class="row" id="simpan" style="background: #fff ;padding: 15px; border-radius: 0 0 10px 10px; display: none;">
+					<div class="col-md-6">
+						<p style="color: #777; margin-top: 10px"><span style="color: red">*</span> Mohon tambahkan informasi profil Anda yang lebih lengkap di Smart Traveler</p>
+					</div>
+					<div class="col-md-6">		
+						<button class="btn " id="btn" onclick="batal()" style="background: #fff; color: #777; margin-top: 15px; margin-left: 70px;">Batal</button>
+						<button type="submit" class="btn " id="btn" onclick="simpan()" style="background: #FF7200; color: #fff; margin-top: 15px; margin-left: 10px">Simpan</button>
+						<button class="btn " id="btn" style="background: #ff0000;color: #fff; margin-left: 10px; margin-top: 15px">Delete</button>
+					</div>
 				</div>
 			</form>
 		</div>
-		<div class="row" id="simpan" style="background: #fff ;padding: 15px; border-radius: 0 0 10px 10px; display: none;">
-			<div class="col-md-8">
-				<p style="color: #777; margin-top: 10px"><span style="color: red">*</span> Mohon tambahkan informasi profil Anda yang lebih lengkap di Smart Traveler</p>
-			</div>
-			<div class="col-md-4">		
-				<button class="btn " id="btn" onclick="batal()" style="background: #fff; color: #777; margin-top: 15px; margin-left: 50px;">Batal</button>
-				<button class="btn " id="btn" onclick="simpan()" style="background: #FF7200; color: #fff; margin-top: 15px; margin-left: 10px">Simpan</button>
-			</div>
-		</div>
+		
 
 		<div class="row" style="background-color: white;height: 185px;border-radius: 8px;border: solid .5px #ddd; margin-top: 15px">
 			<div class="col">
@@ -217,5 +217,8 @@
 	function simpan(){
 		var x = document.getElementById('titel').value;
 		document.getElementById('gelar').innerHTML = x;
+		document.getElementById("isi").style.display = "none";
+		document.getElementById("simpan").style.display = "none";
+		document.getElementById("ubah_btn").style.display = "flex"
 	}
 </script>
