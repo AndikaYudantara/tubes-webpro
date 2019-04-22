@@ -23,7 +23,11 @@
   	margin-bottom: 30px;
   	margin-left: 70px;
   	color: white;
-}
+  	font-size: 125%;
+  	}
+  	#hover3,#hover4,#hover5{
+  		display: none
+  	}
 
 
 </style>
@@ -142,53 +146,6 @@
 					Mulai Dari <span style="color:#ffcc00;font-weight: 400;
 					font-size: 120%">IDR 110.000</span>
 				</div>
-
-				<div class="mx-auto" id="hover" style="padding: 3em">
-					<span style="color: white;font-size: 130%">Ke</span>
-					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Jakarta </span>
-					<br><span style="color: white">Dari</span><br>
-					<div class="row">
-						<div class="col-7"style="color: white" >
-							Bandung
-						</div>
-						<div class="col" style="color: #ffcc00;">
-							IDR 110.000
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-7" style="color: white">
-							Malang
-						</div>
-						<div class="col" style="color: #ffcc00;">
-							IDR 110.000
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-7" style="color: white">
-							Yogyakarta
-						</div>
-						<div class="col" style="color: #ffcc00;">
-							IDR 110.000
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-7" style="color: white">
-							Cirebon
-						</div>
-						<div class="col" style="color: #ffcc00;">
-							IDR 110.000
-						</div>
-					</div>
-					<div class="row" style="color: white">
-						<div class="col-7">
-							Surabaya pasarturi
-						</div>
-						<div class="col" style="color: #ffcc00;">
-							IDR 110.000
-						</div>
-					</div>
-				</div>
-			</div>
 
 			<div class="col-4 mx-auto" style="background-image:url(<?= base_url('/assets/img/logo_KA2.jpg'); ?>);height: 300px;
 			background-repeat: no-repeat;background-position: center;vertical-align: text-bottom ">
