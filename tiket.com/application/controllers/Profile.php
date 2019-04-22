@@ -24,7 +24,7 @@ class Profile extends CI_Controller{
 		$this->form_validation->set_rules('uname', 'uname', 'required');
 		if($this->form_validation->run() == TRUE){
 		$data =[
-			'username' => $this->input->post('uname', TRUE)
+			'username' => $this->input->post('titel', TRUE)." ".$this->input->post('uname', TRUE)
 		];
 			$this->Profil->update($this->session->userdata('username'),$data);
 			$this->session->sess_destroy();

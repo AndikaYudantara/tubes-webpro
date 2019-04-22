@@ -38,7 +38,7 @@ class Register extends CI_Controller{
 			];
 
 			$this->User_model->insert($data);
-			redirect(base_url());
+			redirect(base_url('/Login'));
 		}
 	}
 

@@ -144,7 +144,7 @@
 
 		<div class="row" id="head" style="background-color: white;height: 100px;border-radius: 8px;border: solid .5px #ddd">
 			<div class="col" style="padding: 2em;padding-top: 1em;padding-left: 2.5em;">
-				<div class="row" style="font-weight: 500;font-size: 120%"><span id="gelar">Tuan </span> &nbsp;<?=  $this->session->userdata('username'); ?></div>
+				<div class="row" style="font-weight: 500;font-size: 120%"><span id="gelar"></span> &nbsp;<?=  $this->session->userdata('username'); ?></div>
 				<div class="row" style="margin-top: 10px;"> <?=  $this->session->userdata('email'); ?></div>
 				<button class="btn " id="ubah_btn" style="float: right; margin-top: -45px; border: 1px solid #ff7200" onclick="ubah()">Ubah</button>
 			</div>
@@ -219,8 +219,7 @@
 		document.getElementById("ubah_btn").style.display = "flex"
 	}
 	function simpan(){
-		var x = document.getElementById('titel').value;
-		document.getElementById('gelar').innerHTML = x;
+		
 		document.getElementById("isi").style.display = "none";
 		document.getElementById("simpan").style.display = "none";
 		document.getElementById("ubah_btn").style.display = "flex"
