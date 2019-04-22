@@ -144,7 +144,7 @@
 
 		<div class="row" id="head" style="background-color: white;height: 100px;border-radius: 8px;border: solid .5px #ddd">
 			<div class="col" style="padding: 2em;padding-top: 1em;padding-left: 2.5em;">
-				<div class="row" style="font-weight: 500;font-size: 120%">Tuan/Nyonya <?=  $this->session->userdata('username'); ?></div>
+				<div class="row" style="font-weight: 500;font-size: 120%"><span id="gelar">Tuan </span> &nbsp;<?=  $this->session->userdata('username'); ?></div>
 				<div class="row" style="margin-top: 10px;"> <?=  $this->session->userdata('email'); ?></div>
 				<button class="btn " id="ubah_btn" style="float: right; margin-top: -45px; border: 1px solid #ff7200" onclick="ubah()">Ubah</button>
 			</div>
@@ -154,12 +154,12 @@
 				<div class="row" style="margin-bottom: 15px; margin-top: 15px">
 					<div class="col-md-4"><label for="titel" style="color: #777; font-size: 20px">Titel</label></div>
 					<div class="col-md-8">
-						<select name="titel" style="width: 100%; border: none; border-bottom: 1px solid #ccc; font-size: 18px">
-					    	<option value="Tuan">Tuan</option>
-					    	<option value="Nyonya">Nyonya</option>
-					    	<option value="Nona">Nona</option>
+						<select name="titel" id="titel" style="width: 100%; border: none; border-bottom: 1px solid #ccc; font-size: 18px">
+					    	<option value="Tuan ">Tuan</option>
+					    	<option value="Nyonya ">Nyonya</option>
+					    	<option value="Nona ">Nona</option>
 					  	</select>
-					</div>	
+					</div>
 				</div>
 				<div class="row" style="margin-bottom: 15px; margin-top: 15px">
 					<div class="col-md-4"><label for="nama_depan" style="color: #777; font-size: 20px">Nama Depan</label></div>
@@ -177,7 +177,7 @@
 			</div>
 			<div class="col-md-4">		
 				<button class="btn " id="btn" onclick="batal()" style="background: #fff; color: #777; margin-top: 15px; margin-left: 50px;">Batal</button>
-				<button class="btn " id="btn" style="background: #FF7200; color: #fff; margin-top: 15px; margin-left: 10px">Simpan</button>
+				<button class="btn " id="btn" onclick="simpan()" style="background: #FF7200; color: #fff; margin-top: 15px; margin-left: 10px">Simpan</button>
 			</div>
 		</div>
 
@@ -206,11 +206,16 @@
 		document.getElementById("simpan").style.display = "flex";
 		document.getElementById("head").style.borderRadius = "15px 15px 0 0";
 		document.getElementById("ubah_btn").style.display = "none"
+
 	}
 	function batal(){
 		document.getElementById("isi").style.display = "none";
 		document.getElementById("simpan").style.display = "none";
 		document.getElementById("head").style.borderRadius = "15px 15px 15px 15px";
 		document.getElementById("ubah_btn").style.display = "flex"
+	}
+	function simpan(){
+		var x = document.getElementById('titel').value;
+		document.getElementById('gelar').innerHTML = x;
 	}
 </script>

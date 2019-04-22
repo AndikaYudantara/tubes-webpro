@@ -17,14 +17,16 @@
 		background-color: #ffc299;
 	}
 	#align-bottom {
- 	 position: absolute;
+ 	position: absolute;
   	bottom: 0;
   	left: 0;
   	margin-bottom: 30px;
   	margin-left: 90px;
   	color: white;
-  	font-size: 80%;
-  }
+  	font-size: 100%;
+  	}
+
+
 
 </style>
 
@@ -189,9 +191,8 @@
 			</div>
 
 
-			<div class="col-4 mx-auto" style="background-image:url(<?= base_url('/assets/img/logo_KA6.jpg'); ?>);height: 300px;
-			background-repeat: no-repeat;background-position: center;vertical-align: text-bottom ">
-				<div id="align-bottom" >
+			<div class="col-4 mx-auto" id="surabaya" style="background-image:url(<?= base_url('/assets/img/logo_KA6.jpg'); ?>);height: 300px;background-repeat: no-repeat;background-position: center;vertical-align: text-bottom ">
+				<div id="align-bottom">
 					Tiket Kereta ke
 					<br><span style="font-weight: 500;font-size: 150%">Surabaya</span><br>
 					Mulai Dari <span style="color:#ffcc00;font-weight: 400;
@@ -204,17 +205,17 @@
 		
 	</div>
 
-	<div class="col mx-auto" style="margin-bottom: 100px;margin-top: 50px;">
+	<div class="col text-center" style="margin-bottom: 100px;margin-top: 50px;">
 		<div style="font-weight: bold;font-size: 150%;margin-bottom: 40px" class="row">
 			<div class="col-4 mx-auto">Cara Pesan Tiket Kereta Api</div>
 			
 		</div>
 		<div class="row">
-			<div class="col-4 mx-auto"><img style="margin-left: -180px;" src="<?= base_url(); ?>/assets/img/pesan.png" ></div>
+			<div class="col-4 mx-auto"><img style="margin-left: -90px" src="<?= base_url(); ?>/assets/img/pesan.png" ></div>
 		</div>
-		<div class="row" style="margin-top: 20px; margin-left: 100px;">
+		<div class="row" style="margin-top: 20px;">
 			<div class="col-4 mx-auto">
-			<button id="btn" type="submit" name="Selengkapnya" class="btn ">Selengkapnya</button>
+			<button id="btn" type="submit" name="Selengkapnya" class="btn " style="border: 1px solid #ff7200">Selengkapnya</button>
 			</div>
 		</div>
 

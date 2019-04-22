@@ -8,10 +8,10 @@
  		background-color: #ff7200;
  	}
  	#destinasi div img{
- 		transition: transform .2s;
+ 		transition: transform .4s;
  	}
  	#destinasi div img:hover{
- 		transform: scale(1.05);
+ 		transform: scale(1.1);
  	}
  	#tix div img{
  		transition: transform .2s;
