@@ -16,7 +16,7 @@
 	#btn2:hover{
 		background-color: #ffc299;
 	}
-	#align-bottom {
+	.align-bottom {
  	 position: absolute;
   	bottom: 0;
   	left: 0;
@@ -25,7 +25,7 @@
   	color: white;
   	font-size: 125%;
   }
-  #hover{
+  #hover,#hover1,#hover2,#hover3,#hover4,#hover5{
   	display: none;
   }
 
@@ -142,7 +142,7 @@
 		<div class="row">
 			<div class="col-4 mx-auto" id="body" style="background-image:url(<?= base_url('/assets/img/logo_KA1.jpg'); ?>);height: 300px;
 			background-repeat: no-repeat;background-position: center;vertical-align: text-bottom ">
-				<div id="align-bottom" >
+				<div id="align-bottom" class="align-bottom" >
 					Tiket Kereta ke
 					<br><span style="font-weight: 500;font-size: 150%">Jakarta</span><br>
 					Mulai Dari <span style="color:#ffcc00;font-weight: 400;
@@ -166,7 +166,7 @@
 							Malang
 						</div>
 						<div class="col" style="color: #ffcc00;">
-							IDR 110.000
+							IDR 650.000
 						</div>
 					</div>
 					<div class="row">
@@ -174,7 +174,7 @@
 							Yogyakarta
 						</div>
 						<div class="col" style="color: #ffcc00;">
-							IDR 110.000
+							IDR 490.000
 						</div>
 					</div>
 					<div class="row">
@@ -182,7 +182,7 @@
 							Cirebon
 						</div>
 						<div class="col" style="color: #ffcc00;">
-							IDR 110.000
+							IDR 125.000
 						</div>
 					</div>
 					<div class="row" style="color: white">
@@ -190,65 +190,274 @@
 							Surabaya pasarturi
 						</div>
 						<div class="col" style="color: #ffcc00;">
-							IDR 110.000
+							IDR 600.000
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-4 mx-auto" style="background-image:url(<?= base_url('/assets/img/logo_KA2.jpg'); ?>);height: 300px;
+			<div class="col-4 mx-auto" id="body1" style="background-image:url(<?= base_url('/assets/img/logo_KA2.jpg'); ?>);height: 300px;
 			background-repeat: no-repeat;background-position: center;vertical-align: text-bottom ">
-				<div id="align-bottom" >
+				<div id="align-bottom1" class="align-bottom">
 					Tiket Kereta ke
 					<br><span style="font-weight: 500;font-size: 150%">Bandung</span><br>
 					Mulai Dari <span style="color:#ffcc00;font-weight: 400;
 					font-size: 120%">IDR 110.000</span>
 				</div>
+				<div class="mx-auto" id="hover1" style="padding: 3em">
+					<span style="color: white;font-size: 130%">Ke</span>
+					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Jakarta </span>
+					<br><span style="color: white">Dari</span><br>
+					<div class="row">
+						<div class="col-7"style="color: white" >
+							Gambir
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 110.000
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7" style="color: white">
+							Malang
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 260.000
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7" style="color: white">
+							Yogyakarta
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 195.000
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7" style="color: white">
+							Cirebon
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 140.000
+						</div>
+					</div>
+					<div class="row" style="color: white">
+						<div class="col-7">
+							Surabaya pasarturi
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 270.000
+						</div>
+					</div>
+				</div>
 			</div>
 
 
-			<div class="col-4 mx-auto" style="background-image:url(<?= base_url('/assets/img/logo_KA3.jpg'); ?>);height: 300px;
+			<div class="col-4 mx-auto" id="body2" style="background-image:url(<?= base_url('/assets/img/logo_KA3.jpg'); ?>);height: 300px;
 			background-repeat: no-repeat;background-position: center;vertical-align: text-bottom ">
-				<div id="align-bottom" >
+				<div id="align-bottom2" class="align-bottom">
 					Tiket Kereta ke
 					<br><span style="font-weight: 500;font-size: 150%">Malang</span><br>
 					Mulai Dari <span style="color:#ffcc00;font-weight: 400;
-					font-size: 120%">IDR 110.000</span>
+					font-size: 120%">IDR 550.000</span>
+				</div>
+				<div class="mx-auto" id="hover2" style="padding: 3em">
+					<span style="color: white;font-size: 130%">Ke</span>
+					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Jakarta </span>
+					<br><span style="color: white">Dari</span><br>
+					<div class="row">
+						<div class="col-7"style="color: white" >
+							Gambir
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 555.000
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7" style="color: white">
+							Bandung
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 260.000
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7" style="color: white">
+							Yogyakarta
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 170.000
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7" style="color: white">
+							Cirebon
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 520.000
+						</div>
+					</div>
+					<div class="row" style="color: white">
+						<div class="col-7">
+							Surabaya pasarturi
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 35.000
+						</div>
+					</div>
 				</div>
 			</div>
 
 		</div>
 
 		<div class="row">
-			<div class="col-4 mx-auto" style="background-image:url(<?= base_url('/assets/img/logo_KA4.jpg'); ?>);height: 300px;
+			<div class="col-4 mx-auto" id="body3" style="background-image:url(<?= base_url('/assets/img/logo_KA4.jpg'); ?>);height: 300px;
 			background-repeat: no-repeat;background-position: center;vertical-align: text-bottom ">
-				<div id="align-bottom" >
+				<div id="align-bottom3" class="align-bottom" >
 					Tiket Kereta ke
 					<br><span style="font-weight: 500;font-size: 150%">Yogyakarta</span><br>
 					Mulai Dari <span style="color:#ffcc00;font-weight: 400;
-					font-size: 120%">IDR 110.000</span>
+					font-size: 120%">IDR 380.000</span>
+				</div>
+				<div class="mx-auto" id="hover3" style="padding: 3em">
+					<span style="color: white;font-size: 130%">Ke</span>
+					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Jakarta </span>
+					<br><span style="color: white">Dari</span><br>
+					<div class="row">
+						<div class="col-7"style="color: white" >
+							Gambir
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 380.000
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7" style="color: white">
+							Bandung
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 225.000
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7" style="color: white">
+							Malang
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 170.000
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7" style="color: white">
+							Cirebon
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 180.000
+						</div>
+					</div>
 				</div>
 			</div>
 
 
-			<div class="col-4 mx-auto" style="background-image:url(<?= base_url('/assets/img/logo_KA5.jpg'); ?>);height: 300px;
+			<div class="col-4 mx-auto" id="body4" style="background-image:url(<?= base_url('/assets/img/logo_KA5.jpg'); ?>);height: 300px;
 			background-repeat: no-repeat;background-position: center;vertical-align: text-bottom ">
-				<div id="align-bottom" >
+				<div id="align-bottom4" class="align-bottom" >
 					Tiket Kereta ke
 					<br><span style="font-weight: 500;font-size: 150%">Cirebon</span><br>
 					Mulai Dari <span style="color:#ffcc00;font-weight: 400;
-					font-size: 120%">IDR 110.000</span>
+					font-size: 120%">IDR 100.000</span>
+				</div>
+				<div class="mx-auto" id="hover4" style="padding: 3em">
+					<span style="color: white;font-size: 130%">Ke</span>
+					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Jakarta </span>
+					<br><span style="color: white">Dari</span><br>
+					<div class="row">
+						<div class="col-7"style="color: white" >
+							Gambir
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 100.000
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7" style="color: white">
+							Bandung
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 140.000
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7" style="color: white">
+							Malang
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 520.000
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7" style="color: white">
+							Yogyakarta
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 180.000
+						</div>
+					</div>
+					<div class="row" style="color: white">
+						<div class="col-7">
+							Surabaya pasarturi
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 220.000
+						</div>
+					</div>
 				</div>
 			</div>
 
 
-			<div class="col-4 mx-auto" style="background-image:url(<?= base_url('/assets/img/logo_KA6.jpg'); ?>);height: 300px;
+			<div class="col-4 mx-auto" id="body5" style="background-image:url(<?= base_url('/assets/img/logo_KA6.jpg'); ?>);height: 300px;
 			background-repeat: no-repeat;background-position: center;vertical-align: text-bottom ">
-				<div id="align-bottom" >
+				<div id="align-bottom5" class="align-bottom" >
 					Tiket Kereta ke
 					<br><span style="font-weight: 500;font-size: 150%">Surabaya</span><br>
 					Mulai Dari <span style="color:#ffcc00;font-weight: 400;
-					font-size: 120%">IDR 110.000</span>
+					font-size: 120%">IDR 470.000</span>
+				</div>
+				<div class="mx-auto" id="hover5" style="padding: 3em">
+					<span style="color: white;font-size: 130%">Ke</span>
+					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Jakarta </span>
+					<br><span style="color: white">Dari</span><br>
+					<div class="row">
+						<div class="col-7"style="color: white" >
+							Gambir
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 470.000
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7" style="color: white">
+							Bandung
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 300.000
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7" style="color: white">
+							Malang
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 35.000
+						</div>
+					</div>
+					<div class="row" style="color: white">
+						<div class="col-7">
+							Cirebon
+						</div>
+						<div class="col" style="color: #ffcc00;">
+							IDR 240.000
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -281,5 +490,46 @@
 		document.getElementById("body").onmouseout=function(){
 		document.getElementById("hover").style.display="none";
 		document.getElementById("align-bottom").style.display="block";
+	}
+
+
+	document.getElementById("body1").onmouseover= function(){
+		document.getElementById("hover1").style.display="block";
+		document.getElementById("align-bottom1").style.display="none";}
+		document.getElementById("body1").onmouseout=function(){
+		document.getElementById("hover1").style.display="none";
+		document.getElementById("align-bottom1").style.display="block";
+	}
+
+	document.getElementById("body2").onmouseover= function(){
+		document.getElementById("hover2").style.display="block";
+		document.getElementById("align-bottom2").style.display="none";}
+		document.getElementById("body2").onmouseout=function(){
+		document.getElementById("hover2").style.display="none";
+		document.getElementById("align-bottom2").style.display="block";
+	}
+
+	document.getElementById("body3").onmouseover= function(){
+		document.getElementById("hover3").style.display="block";
+		document.getElementById("align-bottom3").style.display="none";}
+		document.getElementById("body3").onmouseout=function(){
+		document.getElementById("hover3").style.display="none";
+		document.getElementById("align-bottom3").style.display="block";
+	}
+
+	document.getElementById("body4").onmouseover= function(){
+		document.getElementById("hover4").style.display="block";
+		document.getElementById("align-bottom4").style.display="none";}
+		document.getElementById("body4").onmouseout=function(){
+		document.getElementById("hover4").style.display="none";
+		document.getElementById("align-bottom4").style.display="block";
+	}
+
+	document.getElementById("body5").onmouseover= function(){
+		document.getElementById("hover5").style.display="block";
+		document.getElementById("align-bottom5").style.display="none";}
+		document.getElementById("body5").onmouseout=function(){
+		document.getElementById("hover5").style.display="none";
+		document.getElementById("align-bottom5").style.display="block";
 	}
 </script>
