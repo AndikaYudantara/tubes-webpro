@@ -206,7 +206,7 @@
 				</div>
 				<div class="mx-auto" id="hover1" style="padding: 3em">
 					<span style="color: white;font-size: 130%">Ke</span>
-					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Jakarta </span>
+					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Bandung </span>
 					<br><span style="color: white">Dari</span><br>
 					<div class="row">
 						<div class="col-7"style="color: white" >
@@ -262,7 +262,7 @@
 				</div>
 				<div class="mx-auto" id="hover2" style="padding: 3em">
 					<span style="color: white;font-size: 130%">Ke</span>
-					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Jakarta </span>
+					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Malang </span>
 					<br><span style="color: white">Dari</span><br>
 					<div class="row">
 						<div class="col-7"style="color: white" >
@@ -320,7 +320,7 @@
 				</div>
 				<div class="mx-auto" id="hover3" style="padding: 3em">
 					<span style="color: white;font-size: 130%">Ke</span>
-					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Jakarta </span>
+					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Yogyakarta </span>
 					<br><span style="color: white">Dari</span><br>
 					<div class="row">
 						<div class="col-7"style="color: white" >
@@ -368,7 +368,7 @@
 				</div>
 				<div class="mx-auto" id="hover4" style="padding: 3em">
 					<span style="color: white;font-size: 130%">Ke</span>
-					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Jakarta </span>
+					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Cirebon </span>
 					<br><span style="color: white">Dari</span><br>
 					<div class="row">
 						<div class="col-7"style="color: white" >
@@ -424,7 +424,7 @@
 				</div>
 				<div class="mx-auto" id="hover5" style="padding: 3em">
 					<span style="color: white;font-size: 130%">Ke</span>
-					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Jakarta </span>
+					<br><span style="color: white;font-size: 200%;font-weight: bold;"> Surabaya </span>
 					<br><span style="color: white">Dari</span><br>
 					<div class="row">
 						<div class="col-7"style="color: white" >
@@ -519,7 +519,8 @@
 
 	document.getElementById("body4").onmouseover= function(){
 		document.getElementById("hover4").style.display="block";
-		document.getElementById("align-bottom4").style.display="none";}
+		document.getElementById("align-bottom4").style.display="none";
+		}
 		document.getElementById("body4").onmouseout=function(){
 		document.getElementById("hover4").style.display="none";
 		document.getElementById("align-bottom4").style.display="block";
