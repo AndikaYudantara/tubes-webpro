@@ -79,6 +79,7 @@
 					<img class="d-block w-100" src="<?= base_url('assets/img/c_1.jpg'); ?>" alt="First slide">
 				</div>
 			</div>
+
 			<a class="carousel-control-prev" href="#carousel_indicators" role="button" data-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			</a>
