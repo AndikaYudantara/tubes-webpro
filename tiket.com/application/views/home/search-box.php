@@ -19,11 +19,16 @@
             <h1 style="margin-bottom: 30px;margin-left: 30px">Mau ke mana?</h1>
           </div>
           <div class="col-md-8" style="padding-left:120px">
-            <img src="<?= base_url();?>/assets/img/logo_pesawat.jpg" style="cursor: pointer;" onclick="view_pesawat()">
-            <img src="<?= base_url();?>/assets/img/logo_hotel.jpg" style="cursor: pointer;" onclick="view_hotel()">
-            <a href="<?= base_url('Kereta_api');?>"> <img src="<?= base_url(); ?>/assets/img/logo_kereta.jpg"></a>
-            <a href="#"> <img src="<?= base_url();?>/assets/img/logo_mobil.jpg"></a>
-            <a href="#"> <img src="<?= base_url();?>/assets/img/logo_entertaiment.jpg"></a>
+            <img id="plane_logo" src="<?= base_url();?>/assets/img/logo_pesawat.jpg" style="cursor: pointer;" onclick="view_pesawat()">
+            <img id="plane_logo_hover" src="<?= base_url();?>/assets/img/logo_pesawat_hover.jpg" style="cursor: pointer; display: none;" onclick="view_pesawat()">
+            <img id="hotel_logo" src="<?= base_url();?>/assets/img/logo_hotel.jpg" style="cursor: pointer;" onclick="view_hotel()">
+            <img id="hotel_logo_hover" src="<?= base_url();?>/assets/img/logo_hotel_hover.jpg" style="cursor: pointer; display: none;" onclick="view_hotel()">
+            <a href="<?= base_url('Kereta_api');?>"><img id="kereta_logo" src="<?= base_url(); ?>/assets/img/logo_kereta.jpg"></a>
+            <a href="<?= base_url('Kereta_api');?>"><img id="kereta_logo_hover" src="<?= base_url();?>/assets/img/logo_kereta_hover.jpg" style="display: none;"></a>
+            <a href="#"><img id="mobil_logo" src="<?= base_url();?>/assets/img/logo_mobil.jpg"></a>
+            <a href="#"><img id="mobil_logo_hover" src="<?= base_url();?>/assets/img/logo_mobil_hover.jpg" style="display: none;"></a>
+            <a href="#"><img id="entertaiment_logo" src="<?= base_url();?>/assets/img/logo_entertaiment.jpg"></a>
+            <a href="#"><img id="entertaiment_logo_hover" src="<?= base_url();?>/assets/img/logo_entertaiment_hover.jpg" style="display: none;"></a>
           </div>
         </div>
       </div>
@@ -125,17 +130,64 @@
   </div> 
 
   <script type="text/javascript">
-    var plane = document.getElementById("plane");
-    var hotel = document.getElementById("hotel");
     function view_pesawat(){
-      plane.style.display = "block";
-      hotel.style.display = "none"
+      document.getElementById("plane").style.display = "block";
+      document.getElementById("hotel").style.display = "none";
+      document.getElementById("plane_logo_hover").style.display = "inline-block";
+
     }
     function view_hotel(){
-      hotel.style.display = "block";
-      plane.style.display = "none"
+      document.getElementById("hotel").style.display = "block";
+      document.getElementById("plane").style.display = "none"
     }    
+
+    document.getElementById("plane_logo").onmouseover= function(){
+      document.getElementById("plane_logo").style.display = "none";
+      document.getElementById("plane_logo_hover").style.display = "inline-block";
+      document.getElementById("plane_logo_hover").onmouseout=function(){
+        document.getElementById("plane_logo_hover").style.display="none";
+        document.getElementById("plane_logo").style.display="inline-block";
+      }
+    }
+    document.getElementById("hotel_logo").onmouseover= function(){
+      document.getElementById("hotel_logo_hover").style.display = "inline-block";
+      document.getElementById("hotel_logo").style.display = "none";
+      document.getElementById("hotel_logo_hover").onmouseout=function(){
+        document.getElementById("hotel_logo_hover").style.display="none";
+        document.getElementById("hotel_logo").style.display="inline-block";
+      }
+    }
+    
+    document.getElementById("kereta_logo").onmouseover= function(){
+      document.getElementById("kereta_logo_hover").style.display = "inline-block";
+      document.getElementById("kereta_logo").style.display = "none";
+      document.getElementById("kereta_logo_hover").onmouseout=function(){
+        document.getElementById("kereta_logo_hover").style.display="none";
+        document.getElementById("kereta_logo").style.display="inline-block";
+      }
+    }
+    
+    document.getElementById("mobil_logo").onmouseover= function(){
+      document.getElementById("mobil_logo_hover").style.display = "inline-block";
+      document.getElementById("mobil_logo").style.display = "none";
+      document.getElementById("mobil_logo_hover").onmouseout=function(){
+        document.getElementById("mobil_logo_hover").style.display="none";
+        document.getElementById("mobil_logo").style.display="inline-block";
+      }
+    }
+    
+    document.getElementById("entertaiment_logo").onmouseover= function(){
+      document.getElementById("entertaiment_logo_hover").style.display = "inline-block";
+      document.getElementById("entertaiment_logo").style.display = "none";
+      document.getElementById("entertaiment_logo_hover").onmouseout=function(){
+        document.getElementById("entertaiment_logo_hover").style.display="none";
+        document.getElementById("entertaiment_logo").style.display="inline-block";
+      }
+    }
+    
   </script>
+
+
 
   
   
