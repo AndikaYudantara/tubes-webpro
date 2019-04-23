@@ -52,7 +52,11 @@
 	          <td><span style="font-size: 18px;"><?= $krt['waktu_tiba']; ?></span><br><span style="color: #888888">(<?= $krt['stasiun_tiba']; ?>)</span></td>
 	          <td><span style="font-size: 18px;"><?= $krt['durasi']; ?></span></td>
 
+
 	          <td><button class="btn btn-primary" name="ubah">Ubah</button><button class="btn hapus" name="hapus">Hapus</button></td>
+
+	          <td><a href="<?= base_url('Kereta_api/order/'.$krt['id']); ?>" class="btn btn-primary"name="ubah">Ubah</a><a href="<?= base_url('Kereta_api/hapus_kereta/'.$krt['id']); ?>" class="btn hapus" name="hapus">Hapus</a></td>
+
 	          
 	        </tr>
 	     	<?php } ?>

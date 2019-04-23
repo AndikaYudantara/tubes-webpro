@@ -16,8 +16,8 @@ class Home extends CI_Controller {
 			$this->load->view('templates/home_default_navbar');			
 		}
 		$this->load->view('home/slide');
-		$this->load->view('home/search-box');
-		$this->load->view('home/body');
+		 $this->load->view('home/search-box');
+		 $this->load->view('home/body');
 		$this->load->view('templates/footer');
 
 	}
@@ -76,5 +76,7 @@ class Home extends CI_Controller {
 	public function cari_hotel(){
 
 	}
+
+	
 
 }

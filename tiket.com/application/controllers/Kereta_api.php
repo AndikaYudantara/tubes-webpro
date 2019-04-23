@@ -6,6 +6,7 @@ class Kereta_api extends CI_Controller{
 		parent::__construct();
 		$this->load->model('Kereta_model');
 		$this->load->model('Penumpang_model');
+		$this->load->model('Kereta_model');
 	}
 
 	public function index(){
@@ -148,8 +149,9 @@ class Kereta_api extends CI_Controller{
 		}
 	}
 
-	public function hapus_kereta(){
-
+	public function hapus_kereta($id){
+		$this->Kereta_model->delete($id);
+			redirect(base_url('Kereta_api/kelola'));
 	}
 
 	public function update_kereta(){
