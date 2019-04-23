@@ -141,7 +141,7 @@ class Kereta_api extends CI_Controller{
 				"waktu_tiba" =>$this->input->post('waktu_tiba', TRUE),
 				"kelas" =>$this->input->post('kelas', TRUE),
 				"harga" =>$this->input->post('harga', TRUE),
-				"kereta" =>$this->input->post('kursi', TRUE),
+				"kursi" =>$this->input->post('kursi', TRUE),
 			];
 
 			$this->Kereta_model->insert($data);
