@@ -155,6 +155,7 @@ class Kereta_api extends CI_Controller{
 	}
 
 	public function update_kereta($id){
+<<<<<<< HEAD
 		$this->form_validation->set_rules('nama', 'nama', 'required');
 		$this->form_validation->set_rules('berangkat', 'berangkat', 'required');
 		$this->form_validation->set_rules('tiba', 'tiba', 'required');
@@ -170,6 +171,11 @@ class Kereta_api extends CI_Controller{
 
 		}else{
 			$data = [
+=======
+		$this->Kereta_model->delete($id);
+		
+		$data = [
+>>>>>>> 90a728910222ad09361734b812a8a57f7cba9dc5
 				"nama" =>$this->input->post('nama', TRUE),
 				"stasiun_berangkat" =>$this->input->post('berangkat', TRUE),
 				"stasiun_tiba" =>$this->input->post('tiba', TRUE),
@@ -181,9 +187,14 @@ class Kereta_api extends CI_Controller{
 				"kursi" =>$this->input->post('kursi', TRUE),
 			];
 
+<<<<<<< HEAD
 			$this->Kereta_model->update($id,$data);
 			redirect(base_url('Kereta_api/kelola'));
 		}
+=======
+			$this->Kereta_model->insert($data);
+			redirect(base_url('Kereta_api/kelola'));
+>>>>>>> 90a728910222ad09361734b812a8a57f7cba9dc5
 	}
 
 }
