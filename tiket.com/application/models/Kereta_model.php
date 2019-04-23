@@ -43,6 +43,11 @@ class Kereta_model extends CI_model{
 		$this->db->where('id',$id);
 		return $this->db->delete('kereta');
 	}
+
+	public function update($id,$data){
+		$this->db->where('id',$id);
+		return $this->db->update('kereta',$data);
+	}
 }
 
 ?>

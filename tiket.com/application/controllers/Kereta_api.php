@@ -154,8 +154,36 @@ class Kereta_api extends CI_Controller{
 			redirect(base_url('Kereta_api/kelola'));
 	}
 
-	public function update_kereta(){
-		
+	public function update_kereta($id){
+		$this->form_validation->set_rules('nama', 'nama', 'required');
+		$this->form_validation->set_rules('berangkat', 'berangkat', 'required');
+		$this->form_validation->set_rules('tiba', 'tiba', 'required');
+		$this->form_validation->set_rules('tanggal', 'tanggal', 'required');
+		$this->form_validation->set_rules('waktu_berangkat', 'waktu_berangkat', 'required');
+		$this->form_validation->set_rules('waktu_tiba', 'waktu_tiba', 'required');
+		$this->form_validation->set_rules('kelas', 'kelas', 'required');
+		$this->form_validation->set_rules('harga', 'harga', 'required');
+		$this->form_validation->set_rules('kursi', 'kursi', 'required');
+
+		if($this->form_validation->run() == FALSE){
+			redirect(base_url('Kereta_api/kelola'));
+
+		}else{
+			$data = [
+				"nama" =>$this->input->post('nama', TRUE),
+				"stasiun_berangkat" =>$this->input->post('berangkat', TRUE),
+				"stasiun_tiba" =>$this->input->post('tiba', TRUE),
+				"tanggal" =>$this->input->post('tanggal', TRUE),
+				"waktu_berangkat" =>$this->input->post('waktu_berangkat', TRUE),
+				"waktu_tiba" =>$this->input->post('waktu_tiba', TRUE),
+				"kelas" =>$this->input->post('kelas', TRUE),
+				"harga" =>$this->input->post('harga', TRUE),
+				"kursi" =>$this->input->post('kursi', TRUE),
+			];
+
+			$this->Kereta_model->update($id,$data);
+			redirect(base_url('Kereta_api/kelola'));
+		}
 	}
 
 }
