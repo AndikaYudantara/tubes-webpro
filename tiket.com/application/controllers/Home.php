@@ -15,9 +15,9 @@ class Home extends CI_Controller {
 		}else{
 			$this->load->view('templates/home_default_navbar');			
 		}
-		// $this->load->view('home/slide');
-		// $this->load->view('home/search-box');
-		// $this->load->view('home/body');
+		$this->load->view('home/slide');
+		 $this->load->view('home/search-box');
+		 $this->load->view('home/body');
 		$this->load->view('templates/footer');
 		$this->load->view('Profile_admin/kelola_kereta');
 	}
