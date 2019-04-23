@@ -52,10 +52,10 @@
 	          <td><span style="font-size: 18px;"><?= $krt['waktu_tiba']; ?></span><br><span style="color: #888888">(<?= $krt['stasiun_tiba']; ?>)</span></td>
 	          <td><span style="font-size: 18px;"><?= $krt['durasi']; ?></span></td>
 
-
-	          <td><button class="btn btn-primary" name="ubah">Ubah</button><button class="btn hapus" name="hapus">Hapus</button></td>
-
-	          <td><a href="<?= base_url('Kereta_api/order/'.$krt['id']); ?>" class="btn btn-primary"name="ubah">Ubah</a><a href="<?= base_url('Kereta_api/hapus_kereta/'.$krt['id']); ?>" class="btn hapus" name="hapus">Hapus</a></td>
+	          <td>
+	          	<button class="btn" name="ubah" onclick="ubah()">Ubah</button>
+	          	<a href="<?= base_url('Kereta_api/hapus_kereta/'.$krt['id']); ?>" class="btn hapus" name="hapus">Hapus</a>
+	          </td>
 
 	          
 	        </tr>
@@ -118,10 +118,10 @@
 		</div>
 	</div>
 
-	<div class="row" style="display: none;">
+	<div class="row" style="display: none;" id="ubah">
 		<div class="col">
-			<form action="<?= base_url('Kereta_api/tambah_kereta')?>" method="post" style="width: 1000px; margin-left: 250px; margin-top: 30px; margin-bottom: 30px; border: 2px double #aaa; padding: 30px; border-radius: 15px;">
-			  <h3>Tambah Kereta Api</h3>
+			<form action="<?= base_url('Kereta_api/update_kereta'.$krt['id']);?>" method="post" style="width: 1000px; margin-left: 250px; margin-top: 30px; margin-bottom: 30px; border: 2px double #aaa; padding: 30px; border-radius: 15px;">
+			  <h3>Ubah Kereta Api</h3>
 			  <div class="form-group">
 			    <label for="inputAddress">Nama</label>
 			    <input type="text" class="form-control" name="nama" placeholder="Nama">
@@ -167,7 +167,7 @@
 			      <input type="text" class="form-control" name="kursi">
 			    </div>
 			  </div>
-			  <button type="submit" class="btn btn-primary">Tambah</button>
+			  <button type="submit" class="btn btn-primary">Ubah</button>
 			</form>
 		</div>
 	</div>
@@ -176,5 +176,8 @@
 <script type="text/javascript">
 	function tambah(){
 		document.getElementById("tambah").style.display = "block";
+	}
+	function ubah(){
+		document.getElementById("ubah").style.display = "block";
 	}
 </script>
