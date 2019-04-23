@@ -26,11 +26,17 @@ class Login extends CI_Controller{
 		if($this->form_validation->run() == FALSE){
 			redirect(base_url('/Login'));
 			
-		}else if($this->User_model->validate($this->input->post('email'), $this->input->post('password')) == TRUE){
+		}else if($this->User_model->validate($this->input->post('email'), $this->input->post('password')) == TRUE && $this->User_model->isAdmin($this->input->post('email')) == FALSE){
 			$this->session->set_userdata('username', $this->User_model->search_by_email($this->input->post('email'))->username);
 			$this->session->set_userdata('email',$this->input->post('email'));
 			redirect(base_url());
-		}else{
+		}else if($this->User_model->validate($this->input->post('email'), $this->input->post('password')) == TRUE && $this->User_model->isAdmin($this->input->post('email')) == TRUE){
+			$this->session->set_userdata('username', $this->User_model->search_by_email($this->input->post('email'))->username);
+			$this->session->set_userdata('email',$this->input->post('email'));
+			$this->session->set_userdata('admin',1);
+			redirect(base_url());
+		}
+		else{
 			redirect(base_url('/Login'));
 		}
 	}

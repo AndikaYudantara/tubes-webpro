@@ -15,8 +15,14 @@ class Profile extends CI_Controller{
 		}else{
 			$this->load->view('templates/default_navbar');			
 		}
+
+		if ($this->session->userdata('admin') == 1) {
+			$this->load->view('Profile_admin/index');
+		} else {
+			$this->load->view('Profile/index');
+		}
 		
-		$this->load->view('Profile/index');
+		
 		$this->load->view('templates/footer_login');
 	}
 

@@ -101,5 +101,17 @@ class Kereta_api extends CI_Controller{
 		redirect(base_url('Pembayaran/index/'.$this->session->userdata('kereta')->id));
 	}
 
+	public function tambah_kereta(){
+
+	}
+
+	public function hapus_kereta(){
+
+	}
+
+	public function update_kereta(){
+		
+	}
+
 }
 ?>
