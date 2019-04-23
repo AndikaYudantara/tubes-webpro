@@ -40,7 +40,7 @@
 					<img src="<?= base_url(); ?>/assets/img/logo_home2.png">					
 				</div>
 				<div style="color: black" class="col">
-					<a id="a" href="#">
+					<a id="a" href="<?= base_url('Kereta_api/kelola')?>" >
 						<span style="margin-left: 10px;">Kelola Kereta Api</span>
 					</a>
 				</div>
@@ -116,9 +116,9 @@
 	</div>
 	<div class="col " style="margin-left: 50px">
 		<div class="row" style="font-size: 80%">
-			<span style="color:#FF7200;margin-right: 10px; ">Home</span> <span> > </span> <span style="margin-left: 10[x">Profil Saya</span>
+			<span style="color:#FF7200;margin-right: 10px; ">Home</span> <span> > </span> <span style="margin-left: 10[x">Profil Admin</span>
 		</div>
-		<div class="row" style="font-size: 200%;font-weight: 400;margin-top: 20px;margin-bottom: 20px;">Profil Saya</div>
+		<div class="row" style="font-size: 200%;font-weight: 400;margin-top: 20px;margin-bottom: 20px;">Profil Admin</div>
 
 		<div class="row" id="head" style="background-color: white;height: 100px;border-radius: 8px;border: solid .5px #ddd">
 			<div class="col" style="padding: 2em;padding-top: 1em;padding-left: 2.5em;">

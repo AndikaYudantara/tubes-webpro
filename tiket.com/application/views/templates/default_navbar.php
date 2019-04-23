@@ -21,10 +21,10 @@
           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"  style="color: #888888;"><?= $name = $this->session->userdata('username'); ?></a>
           <div class="dropdown-menu">
             <a class="dropdown-item " href="<?= base_url().'Profile'; ?>" style="font-size: 14px;">Profil Saya</a>
-            <a class="dropdown-item disabled" href="#" style="font-size: 14px;">Kelola Kereta</a>
-            <a class="dropdown-item disabled" href="#" style="font-size: 14px;">Kelola Pesawat</a>
-            <a class="dropdown-item disabled" href="#" style="font-size: 14px;">Kelola Hotel</a>
-            <a class="dropdown-item disabled" href="#" style="font-size: 14px;">Kelola User</a>
+            <a class="dropdown-item disabled" href="#" style="font-size: 14px;">My Order</a>
+            <a class="dropdown-item disabled" href="#" style="font-size: 14px;">Kartu Saya</a>
+            <a class="dropdown-item disabled" href="#" style="font-size: 14px;">Tix Point</a>
+            <a class="dropdown-item disabled" href="#" style="font-size: 14px;">Smart Traveler</a>
             <a class="dropdown-item disabled" href="#" style="font-size: 14px;">Pengaturan Berlangganan</a>
             <a class="dropdown-item disabled" href="#" style="font-size: 14px;">Ubah Kata Sandi</a>
             <a class="dropdown-item" href="<?= base_url('Login/logout'); ?>" style="font-size: 14px;">Keluar</a>
