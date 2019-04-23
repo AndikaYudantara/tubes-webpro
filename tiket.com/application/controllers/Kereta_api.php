@@ -6,6 +6,7 @@ class Kereta_api extends CI_Controller{
 		parent::__construct();
 		$this->load->model('Kereta_model');
 		$this->load->model('Penumpang_model');
+		$this->load->model('Kereta_model');
 	}
 
 	public function index(){
@@ -26,7 +27,7 @@ class Kereta_api extends CI_Controller{
 		$this->form_validation->set_rules('stasiun_berangkat', 'stasiun_berangkat', 'required');
 		$this->form_validation->set_rules('stasiun_tiba', 'stasiun_tiba', 'required');
 		$this->form_validation->set_rules('tanggal_pergi', 'tanggal_pergi', 'required');
-			$this->form_validation->set_rules('tanggal_pulang', 'tanggal_pulang', 'required');
+		$this->form_validation->set_rules('tanggal_pulang', 'tanggal_pulang', 'required');
 		$this->form_validation->set_rules('jumlah_penumpang', 'jumlah_penumpang', 'required');
 
 		if($this->form_validation->run() == FALSE){
@@ -101,12 +102,28 @@ class Kereta_api extends CI_Controller{
 		redirect(base_url('Pembayaran/index/'.$this->session->userdata('kereta')->id));
 	}
 
+	public function kelola(){
+		$data['kereta'] = $this->Kereta_model->getAll();
+
+		$data['title'] = 'Tiket Kereta Api - Pesan Tiket KAI Online Harga Murah di tiket.com';
+		$this->load->view('templates/header', $data);
+		if($this->session->userdata('username') == NULL){
+			$this->load->view('templates/login_navbar');
+		}else{
+			$this->load->view('templates/default_navbar');			
+		}
+		$this->load->view('Profile_admin/kelola_kereta', $data);
+		$this->load->view('templates/footer_login');
+	}
+		
+
 	public function tambah_kereta(){
 
 	}
 
-	public function hapus_kereta(){
-
+	public function hapus_kereta($id){
+		$this->Kereta_model->delete($id);
+			redirect(base_url('Kereta_api/kelola'));
 	}
 
 	public function update_kereta(){
